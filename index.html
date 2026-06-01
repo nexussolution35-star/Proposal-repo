@@ -22,7 +22,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Custom Roofing Website Is Ready · Cloud Nine Roofing and Renovation | King Contractor Agency</title>
+<title>Your Custom Roofing Website Is Ready · Cloud Nine | Nexus Solution</title>
+<link rel="icon" type="image/svg+xml" href="nexus-favicon.svg">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
@@ -79,7 +80,7 @@ a{color:inherit;text-decoration:none}
 
 /* KCA crown · sits ON the top edge of the last letter of the wrapped word (overlapping it slightly) */
 .kca-crown{display:inline-block;position:relative;line-height:1}
-.kca-crown::before{content:'';position:absolute;right:-0.05em;top:-0.42em;width:0.62em;height:0.46em;background-image:url('kca-assets/crown-hires.png');background-size:contain;background-repeat:no-repeat;background-position:center bottom;pointer-events:none;transform:rotate(16deg);transform-origin:bottom right;z-index:2}
+.kca-crown::before{content:none;display:none}
 
 /* KCA Seal-of-Excellence badge · corner stamp on §3 SERP yours-row, outside-left so it doesn't cover logo/text */
 .kca-seal-stamp{position:absolute;top:-30px;left:-46px;width:64px;height:64px;background-image:url('kca-assets/KCA-Badge-3.webp');background-size:contain;background-repeat:no-repeat;background-position:center;pointer-events:none;filter:drop-shadow(0 4px 12px rgba(0,0,0,0.45));z-index:4;transform:rotate(-8deg)}
@@ -194,7 +195,7 @@ a{color:inherit;text-decoration:none}
 .frustration-card.solution .frustration-card-head .king-mascot{width:84px;height:84px;background-image:url('kca-assets/king-icon.webp');background-size:contain;background-repeat:no-repeat;background-position:center;flex-shrink:0;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.20))}
 .frustration-list.solution{gap:20px}
 .frustration-list.solution li{display:grid;grid-template-columns:30px 1fr;gap:16px;align-items:flex-start;font-weight:600;color:#fff;font-size:17px}
-.frustration-list.solution li::before{content:'';display:block;width:30px;height:30px;background-image:url('kca-assets/crown-hires.png');background-size:contain;background-repeat:no-repeat;background-position:center;flex-shrink:0;margin-top:1px;filter:drop-shadow(0 2px 6px rgba(238,182,68,0.45))}
+.frustration-list.solution li::before{content:'';display:block;width:30px;height:30px;background-image:none;background-size:contain;background-repeat:no-repeat;background-position:center;flex-shrink:0;margin-top:1px;filter:drop-shadow(0 2px 6px rgba(238,182,68,0.45))}
 .frustration-list.solution li strong{color:#EEB644}
 
 /* === §B · WHAT I DO (full-viewport, punchy sentence + stat + bullets) === */
@@ -613,7 +614,7 @@ details.proposal-collapsible[open] > .ps-summary{
 
 /* Cover laptop (desktop preview in hero right column) */
 .cover-laptop{width:100%;max-width:720px;justify-self:end;position:relative}
-.cover-laptop-crown{position:absolute;top:-32px;right:-26px;width:96px;height:78px;background-image:url('kca-assets/crown-hires.png');background-size:contain;background-repeat:no-repeat;background-position:center bottom;filter:drop-shadow(0 6px 14px rgba(0,0,0,0.5));transform:scaleX(-1);z-index:5;pointer-events:none}
+.cover-laptop-crown{position:absolute;top:-32px;right:-26px;width:96px;height:78px;background-image:none;background-size:contain;background-repeat:no-repeat;background-position:center bottom;filter:drop-shadow(0 6px 14px rgba(0,0,0,0.5));transform:scaleX(-1);z-index:5;pointer-events:none}
 @media (max-width:1520px){.cover-laptop-crown{top:-24px;right:-12px;width:78px;height:62px}}
 @media (max-width:1380px){.cover-laptop{justify-self:center;max-width:760px}}
 .cover-laptop .laptop-screen{background:#1a1a1a;border-radius:12px 12px 4px 4px;padding:10px 10px 0;box-shadow:0 25px 60px rgba(0,0,0,0.4),0 8px 16px rgba(0,0,0,0.25)}
@@ -894,7 +895,7 @@ details.proposal-collapsible[open] > .ps-summary{
 .pricing-hero{background:linear-gradient(135deg,#0E1430 0%,#1F2124 100%);border-radius:12px;padding:30px 24px 26px;margin:0 0 22px;color:#fff;position:relative;overflow:hidden;border:1px solid rgba(238,182,68,0.18)}
 .pricing-hero::before{content:'';position:absolute;top:-30%;right:-10%;width:280px;height:280px;background:radial-gradient(circle,rgba(238,182,68,0.10) 0%,transparent 65%);pointer-events:none}
 .ph-headline{position:relative;z-index:1;font-family:'Montserrat',sans-serif;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.16em;color:#EEB644;margin-bottom:18px}
-.pricing-hero-crown{position:absolute;top:10px;right:14px;width:60px;height:48px;background-image:url('kca-assets/crown-hires.png');background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.45));z-index:3;pointer-events:none;transform:rotate(18deg)}
+.pricing-hero-crown{position:absolute;top:10px;right:14px;width:60px;height:48px;background-image:none;background-size:contain;background-repeat:no-repeat;background-position:center;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.45));z-index:3;pointer-events:none;transform:rotate(18deg)}
 
 /* Two-tier pricing: setup fee (secondary, smaller) + monthly (primary, bigger) */
 .pricing-tiers{position:relative;z-index:1;display:flex;align-items:flex-end;justify-content:center;gap:28px;margin-bottom:6px}
@@ -1479,11 +1480,11 @@ details.proposal-collapsible[open] > .ps-summary{
 <div class="topbar">
   <div class="topbar-inner">
     <div class="kca-mark">
-      <img src="kca-logo.svg" alt="King Contractor Agency">
+      <span class="nexus-logo"><span class="nexus-word">Nexus</span><svg class="nexus-mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="44" y="10" width="46" height="46" fill="#fff"/><rect x="10" y="44" width="46" height="46" fill="#fff"/><rect x="44" y="44" width="12" height="12" fill="#030303"/></svg><span class="nexus-word">Solution</span></span>
     </div>
     <div class="topbar-client-mark" aria-label="Prepared exclusively for Cloud Nine Roofing and Renovation">
       <span class="topbar-prep-label">Prepared Exclusively For:</span>
-      <img src="kca-assets/client-logo.png" alt="Cloud Nine Roofing and Renovation">
+      <img id="clientLogo" src="kca-assets/client-logo.png" alt="Cloud Nine Roofing and Renovation">
     </div>
   </div>
 </div>
@@ -1504,7 +1505,6 @@ details.proposal-collapsible[open] > .ps-summary{
       </div>
 
       <div class="cover-laptop">
-        <div class="cover-laptop-crown" aria-hidden="true"></div>
         <div class="laptop-screen">
           <div class="laptop-chrome">
             <div class="laptop-dots"><span></span><span></span><span></span></div>
@@ -1538,184 +1538,7 @@ details.proposal-collapsible[open] > .ps-summary{
       </li>
     </ul>
 
-    <!-- Setting industry standards · Real Owners. Real Reviews. (video placeholder) -->
-    <div style="text-align:center">
-      <div style="font-family:'Montserrat',sans-serif;font-size:11px;font-weight:800;letter-spacing:0.18em;text-transform:uppercase;color:#AE312D;margin-bottom:8px">
-        <span aria-hidden="true">&#9733;</span> Setting industry standards
       </div>
-      <div style="font-family:'Montserrat',sans-serif;font-size:clamp(26px,2.4vw,34px);font-weight:900;color:#030303;letter-spacing:-0.012em;margin-bottom:22px">Real Owners. Real Reviews.</div>
-
-      <div class="vision-video-placeholder" style="max-width:900px;margin:0 auto;aspect-ratio:16/9;background:linear-gradient(135deg,#1a1a1a 0%,#2d2d2d 100%);border:2px dashed rgba(238,182,68,0.55);border-radius:14px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;color:#EEB644;box-shadow:0 18px 38px rgba(0,0,0,0.18)">
-        <div style="font-size:64px;line-height:1" aria-hidden="true">&#9654;</div>
-        <div style="font-family:'Montserrat',sans-serif;font-size:13px;font-weight:800;letter-spacing:0.16em;text-transform:uppercase">Video Placeholder</div>
-        <div style="font-size:12px;color:rgba(255,255,255,0.55);max-width:420px;text-align:center;padding:0 18px;line-height:1.55">Drop your owner-testimonial video here.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ CLIENT-BUILDS · PARALLAX REVIEW TILES (NEW per Dean transcript 2026-05-09) ============================ -->
-<!-- Each tile pairs a real KCA-built website screenshot with a Google review card offset to the bottom-right of the image (parallax style). The 6 mockups + 6 reviews are PLACEHOLDER PAIRINGS — Dean to swap to real owner-quote-per-website mappings. -->
-<section class="section section-trust section-client-builds">
-  <div class="section-inner">
-    <h2 class="section-title">Setting <em>industry standards.</em></h2>
-    <p class="section-sub">Every roofing brand below was built by KCA. <strong>Real sites. Real owners. Real reviews.</strong></p>
-
-    <!-- Auto-sliding CAROUSEL · 3-up · each slide = website mockup + dark review card overlapping bottom-right (parallax style, 2026-05-11 per Dean). Owner names verified against each live About page. Columbus + Roofing Tech Unlimited unverified (sites unreachable) — initials avatar; Dean to swap. -->
-    <div class="client-builds-carousel-wrap">
-      <button type="button" class="cb-carousel-arrow cb-carousel-prev" aria-label="Previous client build">&lsaquo;</button>
-      <div class="client-builds-carousel" id="client-builds-carousel">
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://rapidresponseroofs.com" target="_blank" rel="noopener" aria-label="Rapid Response Roofing , open live site">
-          <img src="kca-assets/client-builds/rapid-imgs1.webp" alt="Rapid Response Roofing website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/codey-eatherton.jpg" alt="Codey Eatherton" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Codey Eatherton</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Rapid Response Roofing</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Dean and his team built our entire roofing brand. The website does the selling for us , highly recommend."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://columbusroofing.co" target="_blank" rel="noopener" aria-label="Columbus Roofing Co , open live site">
-          <img src="kca-assets/client-builds/col-imgs1.webp" alt="Columbus Roofing Co website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar" aria-hidden="true">JE</div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Joseph Elshazly</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Columbus Roofing Co</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Dean and his team are REAL professionals. These guys are the REAL DEAL , just take a look at their websites and results."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://vanguardgc.com" target="_blank" rel="noopener" aria-label="Vanguard General Contracting , open live site">
-          <img src="kca-assets/client-builds/vanguard-imgs1.webp" alt="Vanguard General Contracting website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/sam-kohler.webp" alt="Sam Kohler" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Sam Kohler</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Vanguard General Contracting</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"KCA built the site that does the heavy lifting. Genuine team, real results , really happy we chose to do business with King."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://dandmroofing.com" target="_blank" rel="noopener" aria-label="D&amp;M Roofing , open live site">
-          <img src="kca-assets/client-builds/dandmwe-imgs1.webp" alt="D&amp;M Roofing website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/eric-oberembt.webp" alt="Eric Oberembt" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Eric Oberembt</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">D&amp;M Roofing</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Dean and his crew cover every aspect , website, social, the whole brand. They go above and beyond. 5 stars."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://gravityroof.com" target="_blank" rel="noopener" aria-label="Gravity Roofing , open live site">
-          <img src="kca-assets/client-builds/gravity-imgs1.webp" alt="Gravity Roofing website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar"><img src="kca-assets/owners/taz-crumpler.webp" alt="Taz Crumpler" loading="lazy"></div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Taz Crumpler</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Gravity Roofing</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"If you're looking for serious marketing for roofing, reach out to King Contractor. They set you up to succeed."</div>
-        </aside>
-      </article>
-
-      <article class="client-build-tile">
-        <a class="client-build-img-wrap" href="https://roofingtechnologiesunlimited.com" target="_blank" rel="noopener" aria-label="Roofing Technologies Unlimited , open live site">
-          <img src="kca-assets/client-builds/roofingtechnology-imgs1.webp" alt="Roofing Technologies Unlimited website" loading="lazy">
-        </a>
-        <aside class="client-build-review-card">
-          <div class="cb-rev-platform" aria-label="Google"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A10.99 10.99 0 0012 23z"/><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18a10.99 10.99 0 000 9.86l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"/></svg></div>
-          <div class="cb-rev-head">
-            <div class="cb-rev-avatar" aria-hidden="true">BB</div>
-            <div class="cb-rev-info">
-              <div class="cb-rev-name">Ben Burgess</div>
-              <div class="cb-rev-stars"><span class="num">5.0</span>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="cb-rev-source">Owner &middot; <span class="brand">Roofing Technologies Unlimited</span></div>
-            </div>
-          </div>
-          <div class="cb-rev-text">"Dean and his team did a great job for us , couldn't be happier with the result. Thank you Dean."</div>
-        </aside>
-      </article>
-
-      </div>
-      <button type="button" class="cb-carousel-arrow cb-carousel-next" aria-label="Next client build">&rsaquo;</button>
-      <div class="cb-carousel-dots" id="cb-carousel-dots" aria-hidden="true"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================ TRUST §D · PROOF: $1M in 90 days client video ============================ -->
-<section class="section section-proof">
-  <div class="section-inner">
-    <h2 class="proof-stat">$1,000,000<span class="small">in 90 days.</span></h2>
-    <p class="proof-sub">A real KCA client took his new roofing company from <strong>zero to seven figures</strong> in his first 90 days. Watch his story.</p>
-    <a class="proof-video-wrap" href="https://www.youtube.com/watch?v=VNYoIJjtnXY" target="_blank" rel="noopener" aria-label="Watch the $1M in 90 days client story on YouTube">
-      <img src="https://img.youtube.com/vi/VNYoIJjtnXY/maxresdefault.jpg" alt="" loading="lazy" onerror="this.src='https://img.youtube.com/vi/VNYoIJjtnXY/hqdefault.jpg'">
-      <div class="proof-play-btn" aria-hidden="true"></div>
-      <span class="proof-caption">Watch on YouTube &middot; 4 min</span>
-    </a>
-
-    <!-- 2x2 case-studies grid · 4 owner-testimonial videos (added 2026-05-09 from /Desktop/Video Testimonials/) -->
-    <div class="case-studies-grid">
-      <div class="case-study-card" data-cs-idx="0">
-        <div class="case-study-thumb">          <button type="button" class="case-study-play" aria-label="Play Bryson testimonial"></button>
-        </div>
-        <div class="case-study-title">Bryson</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="1">
-        <div class="case-study-thumb">          <button type="button" class="case-study-play" aria-label="Play Eric · D&amp;M Roofing testimonial"></button>
-        </div>
-        <div class="case-study-title">Eric &middot; D&amp;M Roofing</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="2">
-        <div class="case-study-thumb">          <button type="button" class="case-study-play" aria-label="Play Jason · Gladiator Roofing testimonial"></button>
-        </div>
-        <div class="case-study-title">Jason &middot; Gladiator Roofing</div>
-      </div>
-      <div class="case-study-card" data-cs-idx="3">
-        <div class="case-study-thumb">          <button type="button" class="case-study-play" aria-label="Play owner testimonial"></button>
-        </div>
-        <div class="case-study-title">Owner Testimonial</div>
-      </div>
-    </div>
-  </div>
 </section>
 
 <!-- ============================ 3 REASONS YOU'RE WORTH THE CALL (visible — moved out of accordion 2026-05-09 per Dean transcript) ============================ -->
@@ -1735,9 +1558,22 @@ details.proposal-collapsible[open] > .ps-summary{
       </div>
       <div class="reason">
         <div class="reason-num">03</div>
-        <div class="reason-title">We Understand Roofing</div>
-        <p class="reason-body">Seven years building exclusively for roofing contractors. We know what makes Indiana homeowners pick up the phone , storm urgency, insurance language, real warranty proof, owner trust. Generic agencies don't.</p>
+        <div class="reason-title">Three Years Building a Working System</div>
+        <p class="reason-body">Three years refining a system that actually works , real infrastructure, real automation, real results. We know what makes homeowners pick up the phone , clear messaging, instant response, and genuine trust. Generic agencies don't.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ AI DOESN'T SLEEP (Nexus) ============================ -->
+<section class="section section-proof" id="ai-no-sleep">
+  <div class="section-inner">
+    <h2 class="section-title" style="color:#fff;text-align:center;margin:0 auto 14px;max-width:22ch">Your website doesn't sleep. <em>Your AI shouldn't either.</em></h2>
+    <p class="section-sub" style="text-align:center;max-width:700px;margin:0 auto 44px;color:rgba(255,255,255,0.72)">While you're on the job or asleep, three AI systems keep working , capturing every lead, answering every message, and booking the next job for Cloud Nine.</p>
+    <div class="nosleep-grid">
+      <article class="nosleep-card"><span class="pill">Always On</span><div class="nosleep-ic">&#127760;</div><h3>AI Website</h3><p>Your site sells 24/7 , every page built to turn a late-night search into a booked estimate while competitors are offline.</p></article>
+      <article class="nosleep-card"><span class="pill">Speech to Text</span><div class="nosleep-ic">&#128172;</div><h3>WhatsApp Agent</h3><p>Prospects send a WhatsApp voice note , the AI transcribes it, replies in seconds, qualifies the lead, and books the job. No missed message, ever.</p></article>
+      <article class="nosleep-card"><span class="pill">Always On</span><div class="nosleep-ic">&#11088;</div><h3>Reputation Engine</h3><p>Automatically requests reviews and replies to every one in your voice , compounding the trust that wins the next homeowner before they call.</p></article>
     </div>
   </div>
 </section>
@@ -1788,7 +1624,7 @@ details.proposal-collapsible[open] > .ps-summary{
       <div class="formula-op formula-op-equals" aria-hidden="true">=</div>
 
       <div class="formula-result-pill">
-        <div class="formula-result-icon" aria-hidden="true">&#128081; &#128176;</div>
+        <div class="formula-result-icon" aria-hidden="true">&#128176;</div>
         <div class="formula-result-text">More Roofs Sold.</div>
         <div class="formula-result-boom"><span aria-hidden="true">&#128176;</span> Cha-Ching</div>
       </div>
@@ -2108,7 +1944,7 @@ details.proposal-collapsible[open] > .ps-summary{
         <div class="value-stack-head">What's stacked into this</div>
         <div class="value-stack-list">
           <div class="vs-item"><span class="vs-name">Custom Roofing Website Build (40+ pages)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R30,000</s></span></span></div>
-          <div class="vs-item"><span class="vs-name">AI Lead-Handling Stack (AI Infrastructure)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R6,000</s></span></span></div>
+          <div class="vs-item"><span class="vs-name">AI Lead-Handling Stack (AI Infrastructure)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R10,000</s></span></span></div>
           <div class="vs-item"><span class="vs-name">SEO Foundation + Schema + AEO setup</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R8,000</s></span></span></div>
           <div class="vs-item"><span class="vs-name">Hosting &middot; SSL</span><span class="vs-msrp">R2,000</span></div>
           <div class="vs-item"><span class="vs-name">Reputation + Review Auto-Engine</span><span class="vs-msrp">R3,500</span></div>
@@ -2120,7 +1956,7 @@ details.proposal-collapsible[open] > .ps-summary{
           </div>
           <!-- Auto-computed from sum of .vs-msrp values inside .value-stack-list. Updates whenever the
                line items change (e.g. if Dean edits the stack copy). Always matches what's shown. -->
-          <span class="vt-amount" id="valueStackTotal">R49,500<span class="plus">+</span></span>
+          <span class="vt-amount" id="valueStackTotal">R53,500<span class="plus">+</span></span>
         </div>
       </div>
 
@@ -2129,7 +1965,6 @@ details.proposal-collapsible[open] > .ps-summary{
            Monthly base persists per-client via localStorage key kca-{slug}-monthly-base.
            Displayed monthly recomputes from window.KCA_PRICING (base + selected add-ons). -->
       <div class="pricing-hero">
-        <div class="pricing-hero-crown" aria-hidden="true"></div>
         <div class="ph-headline">Your Investment</div>
         <button type="button" class="pricing-edit-btn" id="setupTierEditBtn" onclick="toggleInlineSetupEdit()" aria-label="Edit one-time setup fee" title="Edit setup fee">&#9998;</button>
         <button type="button" class="pricing-edit-btn pricing-edit-btn-right" id="monthlyTierEditBtn" onclick="toggleInlineMonthlyEdit()" aria-label="Edit monthly retainer" title="Edit monthly retainer">&#9998;</button>
@@ -2164,10 +1999,10 @@ details.proposal-collapsible[open] > .ps-summary{
 <!-- ============================ FOOTER ============================ -->
 <footer class="footer">
   <div class="footer-inner">
-    <img src="kca-logo.svg" alt="King Contractor Agency">
-    <p class="footer-tag">Building America's Most Trusted Roofing Brands. The top 1% of roofing websites, designed, built, and shipped by King Contractor Agency.</p>
+    <span class="nexus-logo" style="justify-content:center"><span class="nexus-word" style="font-size:24px">Nexus</span><svg class="nexus-mark" style="width:24px;height:24px" viewBox="0 0 100 100" aria-hidden="true"><rect x="44" y="10" width="46" height="46" fill="#fff"/><rect x="10" y="44" width="46" height="46" fill="#fff"/><rect x="44" y="44" width="12" height="12" fill="#030303"/></svg><span class="nexus-word" style="font-size:24px">Solution</span></span>
+    <p class="footer-tag">Building the most trusted home-service brands , premium AI-powered websites, designed, built, and shipped by Nexus Solution.</p>
     <div class="footer-meta">
-      © <span id="year">2026</span> King Contractor Agency LLC · <a href="https://kingcontractor.com/">kingcontractor.com</a> · Proposal prepared for Cloud Nine Roofing and Renovation, LLC
+      © <span id="year">2026</span> Nexus Solution · <a href="https://nexussolution.com/">nexussolution.com</a> · Proposal prepared for Cloud Nine Roofing and Renovation, LLC
     </div>
     <!-- Subtle yellow add-on services button. Opens the add-on modal where Juan picks LSA / Facebook Ads / SEO / Social Media Domination.
          Selected services render as chips inside the Your Investment card and update window.KCA_PRICING.monthly. -->
@@ -3089,9 +2924,9 @@ document.addEventListener('DOMContentLoaded', function(){
     <div class="sop-pw-inner">
       <button type="button" class="sop-pw-close" aria-label="Close" onclick="document.getElementById('sopPwModal').close()">×</button>
       <div class="sop-pw-icon">&#128274;</div>
-      <div class="sop-pw-eyebrow">Restricted &middot; KCA Internal</div>
+      <div class="sop-pw-eyebrow">Restricted &middot; Nexus Internal</div>
       <div class="sop-pw-title" id="sopPwTitle">Enter password to view the SOP</div>
-      <p class="sop-pw-sub">The Ultimate Roofing Website Blueprint is KCA proprietary. Ask Dean for the access code.</p>
+      <p class="sop-pw-sub">The Ultimate Website Blueprint is Nexus proprietary. Ask your Nexus rep for the access code.</p>
       <input type="password" class="sop-pw-input" id="sopPwInput" placeholder="ENTER ACCESS CODE" autocomplete="off" spellcheck="false" maxlength="32">
       <div class="sop-pw-error" id="sopPwError">&#9888; Wrong code , try again</div>
       <button type="button" class="sop-pw-submit" onclick="submitSopPassword()">Unlock SOP &rarr;</button>
@@ -3340,6 +3175,240 @@ document.addEventListener('DOMContentLoaded', function(){
     window.KCA_PRICING.baseMonthly = getInlineMonthly();
     refreshAll();
   });
+})();
+</script>
+
+<!-- ============================ NEXUS SOLUTION · BRAND + DYNAMIC DEMO ENGINE ============================ -->
+<style>
+/* Nav lockup */
+.nexus-logo{display:flex;align-items:center;gap:11px}
+.nexus-logo .nexus-word{font-family:'Montserrat',sans-serif;font-weight:800;font-size:30px;letter-spacing:-0.01em;color:#fff;line-height:1}
+.nexus-logo .nexus-mark{width:30px;height:30px;flex-shrink:0;display:block}
+@media (max-width:768px){.nexus-logo .nexus-word{font-size:19px}.nexus-logo .nexus-mark{width:21px;height:21px}.nexus-logo{gap:8px}}
+
+/* "Doesn't sleep" section */
+.nosleep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1100px;margin:0 auto}
+@media (max-width:880px){.nosleep-grid{grid-template-columns:1fr;gap:16px}}
+.nosleep-card{background:rgba(255,255,255,0.04);border:1px solid rgba(238,182,68,0.28);border-radius:16px;padding:30px 26px;text-align:left}
+.nosleep-card .nosleep-ic{font-size:38px;line-height:1;margin-bottom:16px}
+.nosleep-card h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:20px;color:#fff;margin-bottom:10px;letter-spacing:-0.01em}
+.nosleep-card p{font-size:15px;line-height:1.6;color:rgba(255,255,255,0.72)}
+.nosleep-card .pill{display:inline-block;margin-bottom:14px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#030303;background:#EEB644;padding:4px 10px;border-radius:999px}
+
+/* Demo setup gate */
+#nexusGate{position:fixed;inset:0;z-index:99999;background:linear-gradient(160deg,#0b0b0c 0%,#1c1f23 100%);display:flex;align-items:center;justify-content:center;padding:24px;overflow-y:auto}
+#nexusGate[hidden]{display:none}
+.ng-card{width:100%;max-width:560px;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:40px 38px;box-shadow:0 30px 80px rgba(0,0,0,0.6);margin:auto}
+.ng-brand{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+.ng-brand .nexus-word{font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;color:#fff}
+.ng-brand svg{width:24px;height:24px}
+.ng-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:25px;color:#fff;letter-spacing:-0.015em;margin:14px 0 4px}
+.ng-sub{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:26px;line-height:1.55}
+.ng-field{margin-bottom:18px}
+.ng-field label{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#EEB644;margin-bottom:7px}
+.ng-field input,.ng-field select{width:100%;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Open Sans',sans-serif;outline:none;transition:border-color .15s}
+.ng-field input:focus,.ng-field select:focus{border-color:#EEB644}
+.ng-field input[type=file]{padding:9px 12px;font-size:13px;color:rgba(255,255,255,0.7)}
+.ng-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:520px){.ng-row{grid-template-columns:1fr}}
+.ng-hint{font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px}
+.ng-logo-prev{margin-top:10px;height:42px;max-width:160px;object-fit:contain;display:none;background:#fff;border-radius:6px;padding:4px}
+.ng-launch{width:100%;margin-top:10px;background:#AE312D;color:#fff;border:none;border-radius:11px;padding:15px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;cursor:pointer;transition:background .15s,transform .1s}
+.ng-launch:hover{background:#7A1F1C;transform:translateY(-1px)}
+.ng-skip{display:block;width:100%;text-align:center;margin-top:14px;background:none;border:none;color:rgba(255,255,255,0.45);font-size:13px;cursor:pointer;text-decoration:underline}
+#nexusEditBtn{position:fixed;right:18px;bottom:18px;z-index:9000;background:#030303;color:#EEB644;border:1px solid rgba(238,182,68,0.5);border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,0.35);transition:background .15s,color .15s}
+#nexusEditBtn:hover{background:#EEB644;color:#030303}
+body.ng-locked{overflow:hidden}
+</style>
+
+<script>
+(function(){
+  "use strict";
+  var MARK = '<svg class="nexus-mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="44" y="10" width="46" height="46" fill="#fff"/><rect x="10" y="44" width="46" height="46" fill="#fff"/><rect x="44" y="44" width="12" height="12" fill="#030303"/></svg>';
+  var KEY = 'nexusDemoConfig';
+  var origTitle = document.title;
+  var stored = null;
+
+  var VOCAB = {
+    roofer:  {industry:'roofing',           pro:'roofer',             pros:'roofers',             unit:'roof',      units:'roofs'},
+    hvac:    {industry:'HVAC',              pro:'HVAC contractor',    pros:'HVAC contractors',    unit:'system',    units:'systems'},
+    kitchen: {industry:'kitchen remodeling',pro:'kitchen remodeler',  pros:'kitchen remodelers',  unit:'remodel',   units:'remodels'},
+    solar:   {industry:'solar',            pro:'solar installer',    pros:'solar installers',    unit:'install',   units:'installs'},
+    pest:    {industry:'pest control',      pro:'pest control pro',   pros:'pest control pros',   unit:'treatment', units:'jobs'}
+  };
+  function vocab(c){
+    if(c.niche==='custom' && c.customNiche){
+      var n=c.customNiche.trim();
+      return {industry:n.toLowerCase(), pro:n.toLowerCase()+' specialist', pros:n.toLowerCase()+' specialists', unit:'job', units:'jobs'};
+    }
+    return VOCAB[c.niche] || VOCAB.roofer;
+  }
+  function ucFirst(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
+  function caseRepl(match, repl){
+    if(match===match.toUpperCase() && match.toLowerCase()!==match) return repl.toUpperCase();
+    if(match.charAt(0)===match.charAt(0).toUpperCase()) return ucFirst(repl);
+    return repl;
+  }
+  function domainFromLink(link){
+    if(!link) return '';
+    try{ var u=new URL(/^https?:\/\//.test(link)?link:'https://'+link); return u.hostname.replace(/^www\./,''); }
+    catch(e){ return ''; }
+  }
+  function replaceMarkers(str,c,v){
+    var s=str;
+    s=s.replace(/Cloud Nine Roofing and Renovation/g, c.client);
+    s=s.replace(/Cloud Nine/g, c.client);
+    s=s.replace(/Greater Noblesville/g, 'Greater '+c.city);
+    s=s.replace(/Noblesville/g, c.city);
+    s=s.replace(/callcloudnine\.com/g, c.domain || 'yourclient.com');
+    s=s.replace(/roofing contractors/gi, function(m){return caseRepl(m,v.pros);});
+    s=s.replace(/roofing contractor/gi, function(m){return caseRepl(m,v.pro);});
+    s=s.replace(/roofing/gi, function(m){return caseRepl(m,v.industry);});
+    s=s.replace(/roofers/gi, function(m){return caseRepl(m,v.pros);});
+    s=s.replace(/roofer/gi, function(m){return caseRepl(m,v.pro);});
+    s=s.replace(/\bRoofs\b/g, function(){return ucFirst(v.units);});
+    s=s.replace(/\broofs\b/g, function(){return v.units;});
+    s=s.replace(/\bRoof\b/g, function(){return ucFirst(v.unit);});
+    s=s.replace(/\broof\b/g, function(){return v.unit;});
+    return s;
+  }
+  function collect(){
+    stored={text:[],attr:[]};
+    var walker=document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode:function(n){
+        if(!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+        var p=n.parentNode; if(!p) return NodeFilter.FILTER_REJECT;
+        var tag=p.nodeName; if(tag==='SCRIPT'||tag==='STYLE') return NodeFilter.FILTER_REJECT;
+        if(p.closest && p.closest('#nexusGate,#nexusEditBtn')) return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    });
+    var n; while(n=walker.nextNode()) stored.text.push({node:n,o:n.nodeValue});
+    var attrs=['alt','aria-label','title','placeholder'];
+    document.querySelectorAll('['+attrs.join('],[')+']').forEach(function(el){
+      if(el.closest('#nexusGate,#nexusEditBtn')) return;
+      attrs.forEach(function(a){ if(el.hasAttribute(a)) stored.attr.push({el:el,a:a,o:el.getAttribute(a)}); });
+    });
+    document.querySelectorAll('[href],[src]').forEach(function(el){
+      ['href','src'].forEach(function(a){
+        if(el.hasAttribute(a)){
+          var val=el.getAttribute(a);
+          if(/cloud-nine-roofing-and-renovation\.vercel\.app|callcloudnine/.test(val)) stored.attr.push({el:el,a:a,o:val,link:true});
+        }
+      });
+    });
+  }
+  function applyConfig(c){
+    if(!stored) collect();
+    var v=vocab(c); c.domain=domainFromLink(c.link);
+    stored.text.forEach(function(t){ t.node.nodeValue=replaceMarkers(t.o,c,v); });
+    stored.attr.forEach(function(t){
+      if(t.link){ t.el.setAttribute(t.a, c.link || (t.a==='src'?'about:blank':'#')); }
+      else { t.el.setAttribute(t.a, replaceMarkers(t.o,c,v)); }
+    });
+    document.title=replaceMarkers(origTitle,c,v);
+    var cl=document.getElementById('clientLogo');
+    if(cl){
+      var mark=cl.parentNode;
+      var tx=mark.querySelector('.topbar-client-text');
+      if(c.logo){
+        cl.src=c.logo; cl.style.display='';
+        if(tx) tx.style.display='none';
+      } else {
+        cl.style.display='none';
+        if(!tx){ tx=document.createElement('span'); tx.className='topbar-client-text'; mark.appendChild(tx); }
+        tx.style.display=''; tx.textContent=c.client;
+      }
+    }
+    var url=document.querySelector('.laptop-url');
+    if(url){ url.textContent='🔒  '+(c.domain||'yourclient.com')+' (live preview)'; }
+  }
+
+  function defaults(){ return {niche:'roofer',customNiche:'',client:'Cloud Nine',city:'Noblesville',link:'',logo:''}; }
+  function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
+  function save(c){ try{ localStorage.setItem(KEY, JSON.stringify(c)); }catch(e){} }
+
+  function buildGate(prefill){
+    var c=prefill||defaults();
+    var wrap=document.getElementById('nexusGate');
+    if(!wrap){
+      wrap=document.createElement('div'); wrap.id='nexusGate'; document.body.appendChild(wrap);
+    }
+    wrap.innerHTML=''+
+      '<div class="ng-card">'+
+        '<div class="ng-brand">'+MARK+'<span class="nexus-word">Nexus Solution</span></div>'+
+        '<div class="ng-title">Set up this demo</div>'+
+        '<div class="ng-sub">Tailor the presentation to your prospect, then launch. Everything below populates the page automatically.</div>'+
+        '<div class="ng-field"><label>Niche</label>'+
+          '<select id="ngNiche">'+
+            '<option value="roofer">Roofer</option>'+
+            '<option value="hvac">HVAC</option>'+
+            '<option value="kitchen">Kitchen Remodeler</option>'+
+            '<option value="solar">Solar Company</option>'+
+            '<option value="pest">Pest Control</option>'+
+            '<option value="custom">Custom…</option>'+
+          '</select></div>'+
+        '<div class="ng-field" id="ngCustomWrap" style="display:none"><label>Custom niche</label><input id="ngCustom" type="text" placeholder="e.g. Landscaping"></div>'+
+        '<div class="ng-row">'+
+          '<div class="ng-field"><label>Client / business name</label><input id="ngClient" type="text" placeholder="e.g. Cloud Nine"></div>'+
+          '<div class="ng-field"><label>City / service area</label><input id="ngCity" type="text" placeholder="e.g. Noblesville"></div>'+
+        '</div>'+
+        '<div class="ng-field"><label>Client website link</label><input id="ngLink" type="url" placeholder="https://theirsite.com"><div class="ng-hint">Drives the live-preview laptop + "Open Live Site".</div></div>'+
+        '<div class="ng-field"><label>Client logo (upload)</label><input id="ngLogo" type="file" accept="image/*"><img class="ng-logo-prev" id="ngLogoPrev" alt=""></div>'+
+        '<button class="ng-launch" id="ngLaunch">Launch presentation →</button>'+
+        '<button class="ng-skip" id="ngSkip">Skip — use defaults</button>'+
+      '</div>';
+    document.getElementById('ngNiche').value=c.niche;
+    document.getElementById('ngClient').value=c.client||'';
+    document.getElementById('ngCity').value=c.city||'';
+    document.getElementById('ngLink').value=c.link||'';
+    document.getElementById('ngCustom').value=c.customNiche||'';
+    var cw=document.getElementById('ngCustomWrap');
+    cw.style.display=(c.niche==='custom')?'block':'none';
+    if(c.logo){ var pv=document.getElementById('ngLogoPrev'); pv.src=c.logo; pv.style.display='block'; }
+    var pendingLogo=c.logo||'';
+    document.getElementById('ngNiche').addEventListener('change',function(e){ cw.style.display=(e.target.value==='custom')?'block':'none'; });
+    document.getElementById('ngLogo').addEventListener('change',function(e){
+      var f=e.target.files&&e.target.files[0]; if(!f) return;
+      var r=new FileReader(); r.onload=function(ev){ pendingLogo=ev.target.result; var pv=document.getElementById('ngLogoPrev'); pv.src=pendingLogo; pv.style.display='block'; }; r.readAsDataURL(f);
+    });
+    function commit(useDefaults){
+      var cfg;
+      if(useDefaults){ cfg=defaults(); }
+      else {
+        cfg={
+          niche:document.getElementById('ngNiche').value,
+          customNiche:document.getElementById('ngCustom').value.trim(),
+          client:document.getElementById('ngClient').value.trim()||'Cloud Nine',
+          city:document.getElementById('ngCity').value.trim()||'Noblesville',
+          link:document.getElementById('ngLink').value.trim(),
+          logo:pendingLogo
+        };
+      }
+      save(cfg); applyConfig(cfg); closeGate();
+    }
+    document.getElementById('ngLaunch').addEventListener('click',function(){ commit(false); });
+    document.getElementById('ngSkip').addEventListener('click',function(){ commit(true); });
+    openGate();
+  }
+  function openGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=false; document.body.classList.add('ng-locked'); } }
+  function closeGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=true; document.body.classList.remove('ng-locked'); } }
+
+  function ensureEditBtn(){
+    if(document.getElementById('nexusEditBtn')) return;
+    var b=document.createElement('button'); b.id='nexusEditBtn'; b.type='button'; b.textContent='⚙ Edit demo';
+    b.addEventListener('click',function(){ buildGate(load()||defaults()); });
+    document.body.appendChild(b);
+  }
+
+  function init(){
+    var saved=load();
+    ensureEditBtn();
+    if(saved){ applyConfig(saved); }
+    else { applyConfig(defaults()); buildGate(defaults()); }
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
+  else init();
 })();
 </script>
 

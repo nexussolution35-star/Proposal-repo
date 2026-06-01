@@ -3350,11 +3350,18 @@ body.ng-locked{overflow:hidden}
         if(vp){ vp.style.position='relative'; var ph=vp.querySelector('.laptop-ph'); if(!ph){ ph=document.createElement('div'); ph.className='laptop-ph'; vp.appendChild(ph); } ph.style.display='flex'; ph.textContent='Add the client’s website link to load the live preview.'; }
       }
     }
+    // reveal one-time offer amount (read by getSetupFee/openSetupFeeModal)
+    if(c.offer){
+      try{ localStorage.setItem(OFFER_KEY, c.offer); }catch(e){}
+      var sf=document.getElementById('setupFeeAmount'); if(sf) sf.textContent='R'+c.offer;
+    }
     // generic open-live buttons -> client root (covers any not caught above)
     document.querySelectorAll('.cover-open-live').forEach(function(a){ a.href = c.link || '#'; });
   }
 
-  function defaults(){ return {niche:'roofer',customNiche:'',client:'Nexus Solution',city:'Hazelview, Robincrest 969',link:'',logo:''}; }
+  var OFFER_KEY = 'kca-one-time-offer-cloud-nine-roofing-and-renovation-zar';
+  function fmtMoney(v){ var n=parseInt(String(v).replace(/[^0-9]/g,''),10); if(isNaN(n)||n<0) return ''; return n.toLocaleString('en-US'); }
+  function defaults(){ return {niche:'roofer',customNiche:'',client:'Nexus Solution',city:'Hazelview, Robincrest 969',link:'',logo:'',offer:'15,000'}; }
   function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
   function save(c){ try{ localStorage.setItem(KEY, JSON.stringify(c)); }catch(e){} }
 
@@ -3382,6 +3389,7 @@ body.ng-locked{overflow:hidden}
           '<div class="ng-field"><label>City / location</label><input id="ngCity" type="text" placeholder="e.g. Nelspruit"></div>'+
         '</div>'+
         '<div class="ng-field"><label>Client website link</label><input id="ngLink" type="url" placeholder="https://theirsite.co.za"><div class="ng-hint">Drives the live-preview laptop, "Open Live Site", and every section link.</div></div>'+
+        '<div class="ng-field"><label>One-Time Offer · Reveal (R)</label><input id="ngOffer" type="text" inputmode="numeric" placeholder="15,000"><div class="ng-hint">Sets the amount in the "Reveal One-Time Offer" popup.</div></div>'+
         '<div class="ng-field"><label>Client logo (upload)</label><input id="ngLogo" type="file" accept="image/*"><img class="ng-logo-prev" id="ngLogoPrev" alt=""></div>'+
         '<button class="ng-launch" id="ngLaunch">Launch presentation →</button>'+
         '<button class="ng-skip" id="ngSkip">Skip — use defaults</button>'+
@@ -3390,6 +3398,7 @@ body.ng-locked{overflow:hidden}
     document.getElementById('ngClient').value=c.client||'';
     document.getElementById('ngCity').value=c.city||'';
     document.getElementById('ngLink').value=c.link||'';
+    document.getElementById('ngOffer').value=c.offer||'';
     document.getElementById('ngCustom').value=c.customNiche||'';
     var cw=document.getElementById('ngCustomWrap');
     cw.style.display=(c.niche==='custom')?'block':'none';
@@ -3410,6 +3419,7 @@ body.ng-locked{overflow:hidden}
           client:document.getElementById('ngClient').value.trim()||'Nexus Solution',
           city:document.getElementById('ngCity').value.trim()||'Hazelview, Robincrest 969',
           link:document.getElementById('ngLink').value.trim(),
+          offer:fmtMoney(document.getElementById('ngOffer').value)||'15,000',
           logo:pendingLogo
         };
       }

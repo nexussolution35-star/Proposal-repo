@@ -3163,6 +3163,20 @@ document.addEventListener('DOMContentLoaded', function(){
 .ng-skip{display:block;width:100%;text-align:center;margin-top:14px;background:none;border:none;color:rgba(255,255,255,0.45);font-size:13px;cursor:pointer;text-decoration:underline}
 #nexusEditBtn{position:fixed;right:18px;bottom:18px;z-index:9000;background:#030303;color:#EEB644;border:1px solid rgba(238,182,68,0.5);border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,0.35);transition:background .15s,color .15s}
 #nexusEditBtn:hover{background:#EEB644;color:#030303}
+#nexusCompleteBtn{position:fixed;right:18px;bottom:62px;z-index:9000;background:#AE312D;color:#fff;border:none;border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(174,49,45,0.4);transition:background .15s,transform .1s}
+#nexusCompleteBtn:hover{background:#7A1F1C;transform:translateY(-1px)}
+#nexusShare{position:fixed;inset:0;z-index:99998;background:rgba(3,3,3,0.72);display:flex;align-items:center;justify-content:center;padding:24px}
+#nexusShare[hidden]{display:none}
+#nexusShare .ns-card{width:100%;max-width:520px;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:32px;box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+#nexusShare h3{font-family:'Montserrat',sans-serif;color:#fff;font-size:21px;margin-bottom:6px;line-height:1.25}
+#nexusShare p{color:rgba(255,255,255,0.6);font-size:13.5px;margin-bottom:18px;line-height:1.5}
+#nexusShare .ns-link{display:flex;gap:8px}
+#nexusShare input{flex:1;min-width:0;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:9px;padding:11px 13px;color:#fff;font-size:12.5px;font-family:monospace}
+#nexusShare .ns-copy{background:#EEB644;color:#030303;border:none;border-radius:9px;padding:0 16px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;text-transform:uppercase;cursor:pointer}
+#nexusShare .ns-ok{margin-top:12px;color:#5BD68D;font-size:12.5px;display:none}
+#nexusShare .ns-actions{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
+#nexusShare a.ns-open{color:#EEB644;font-size:13px;text-decoration:underline}
+#nexusShare .ns-close{background:none;border:none;color:rgba(255,255,255,0.5);font-size:13px;cursor:pointer;text-decoration:underline}
 body.ng-locked{overflow:hidden}
 </style>
 
@@ -3384,15 +3398,69 @@ body.ng-locked{overflow:hidden}
   function openGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=false; document.body.classList.add('ng-locked'); } }
   function closeGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=true; document.body.classList.remove('ng-locked'); } }
 
+  // ---- Save / share: client-sendable proposal link (works with NO backend) ----
+  function getShareParam(){
+    var m=location.search.match(/[?&]c=([^&]+)/); if(m) return decodeURIComponent(m[1]);
+    var h=location.hash.match(/[#&]c=([^&]+)/); if(h) return decodeURIComponent(h[1]);
+    return null;
+  }
+  function encodeCfg(cfg){ try{ return btoa(unescape(encodeURIComponent(JSON.stringify(cfg)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }catch(e){ return ''; } }
+  function decodeCfg(str){ var b=str.replace(/-/g,'+').replace(/_/g,'/'); try{ return JSON.parse(decodeURIComponent(escape(atob(b)))); }catch(e){ return null; } }
+  function buildShareLink(cfg){ return location.origin+location.pathname+'?c='+encodeCfg(cfg); }
+
+  // NexusStore — front-end is finished. To get short links + a saved-clients dashboard,
+  // Lovable only needs to replace save()/load() with Supabase calls (see LOVABLE_HANDOFF.md).
+  // Until then these defaults give a fully working, sendable proposal link (no backend).
+  window.NEXUS_SUPABASE = { url:'', anonKey:'' };           // <-- Lovable: paste Supabase creds
+  window.NexusStore = {
+    save: function(cfg){ return Promise.resolve(buildShareLink(cfg)); },   // -> shareable URL
+    load: function(){ var s=getShareParam(); return s ? decodeCfg(s) : null; }
+  };
+
+  function openShareModal(){
+    var cfg = load() || window.NEXUS_CFG || defaults();
+    var wrap=document.getElementById('nexusShare');
+    if(!wrap){ wrap=document.createElement('div'); wrap.id='nexusShare'; document.body.appendChild(wrap); }
+    wrap.innerHTML='<div class="ns-card">'+
+      '<h3>Proposal saved — send it to '+ (cfg.client||'your client') +'</h3>'+
+      '<p>This link opens a read-only proposal with exactly the niche, branding and prices you set. Copy it and send via WhatsApp or email.</p>'+
+      '<div class="ns-link"><input id="nsLink" type="text" readonly value="Generating…"><button class="ns-copy" id="nsCopy">Copy</button></div>'+
+      '<div class="ns-ok" id="nsOk">✓ Link copied to clipboard</div>'+
+      '<div class="ns-actions"><a class="ns-open" id="nsOpen" target="_blank" rel="noopener">Open as client ↗</a><button class="ns-close" id="nsClose">Close</button></div>'+
+      '</div>';
+    wrap.hidden=false;
+    Promise.resolve(window.NexusStore.save(cfg)).then(function(link){
+      var inp=document.getElementById('nsLink'); if(inp){ inp.value=link; } var op=document.getElementById('nsOpen'); if(op){ op.href=link; }
+    });
+    document.getElementById('nsCopy').addEventListener('click',function(){
+      var inp=document.getElementById('nsLink'); inp.select(); inp.setSelectionRange(0,99999);
+      var done=function(){ document.getElementById('nsOk').style.display='block'; };
+      if(navigator.clipboard){ navigator.clipboard.writeText(inp.value).then(done,function(){ try{document.execCommand('copy');}catch(e){} done(); }); }
+      else { try{document.execCommand('copy');}catch(e){} done(); }
+    });
+    document.getElementById('nsClose').addEventListener('click',function(){ wrap.hidden=true; });
+    wrap.addEventListener('click',function(e){ if(e.target===wrap) wrap.hidden=true; });
+  }
+
   function ensureEditBtn(){
     if(document.getElementById('nexusEditBtn')) return;
     var b=document.createElement('button'); b.id='nexusEditBtn'; b.type='button'; b.textContent='⚙ Edit demo';
     b.addEventListener('click',function(){ buildGate(load()||defaults()); });
     document.body.appendChild(b);
   }
+  function ensureCompleteBtn(){
+    if(document.getElementById('nexusCompleteBtn')) return;
+    var b=document.createElement('button'); b.id='nexusCompleteBtn'; b.type='button'; b.textContent='✓ Presentation complete';
+    b.addEventListener('click',openShareModal);
+    document.body.appendChild(b);
+  }
   function init(){
+    // Client view: opened from a shared link -> apply saved config, no setup gate, no agent buttons.
+    var fromStore = (window.NexusStore && window.NexusStore.load) ? window.NexusStore.load() : null;
+    if(fromStore){ window.__NEXUS_CLIENT_VIEW=true; applyConfig(fromStore); return; }
+    // Agent view: setup gate + edit + presentation-complete.
+    ensureEditBtn(); ensureCompleteBtn();
     var saved=load();
-    ensureEditBtn();
     if(saved){ applyConfig(saved); }
     else { applyConfig(defaults()); buildGate(defaults()); }
   }

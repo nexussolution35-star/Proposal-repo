@@ -59,6 +59,13 @@ window.NexusStore = {
     var m = location.search.match(/[?&]c=([^&]+)/); if(!m) return null;
     return _sb.from('proposals').select('config').eq('id', decodeURIComponent(m[1]))
       .single().then(function(r){ return r.data ? r.data.config : null; });
+  },
+  // Saved-clients dashboard (the "📁 Saved clients" button)
+  list: function(){
+    return _sb.from('proposals').select('id, config, created_at').order('created_at',{ascending:false}).limit(60)
+      .then(function(r){ return (r.data||[]).map(function(row){
+        return { client:(row.config||{}).client, niche:(row.config||{}).niche,
+                 link: location.origin+location.pathname+'?c='+row.id, ts: row.created_at }; }); });
   }
 };
 ```

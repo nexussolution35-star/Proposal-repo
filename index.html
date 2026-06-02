@@ -1638,26 +1638,26 @@ details.proposal-collapsible[open] > .ps-summary{
         </article>
 
         <div class="sitemap-pyramid">
-          <div class="pyramid-tier"><div class="page-box root" role="button" tabindex="0" onclick="openPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('home')}">Home</div></div>
+          <div class="pyramid-tier"><div class="page-box root" role="button" tabindex="0" data-page="home" onclick="openPage('home')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('home')}">Home</div></div>
           <div class="pyramid-trunk"></div>
           <div class="pyramid-tier">
             <div class="pyramid-tier-label">Tier 1 &middot; Core Pages</div>
             <div class="pyramid-row">
-              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" onclick="openPage('about')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('about')}">About</div></div>
-              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" onclick="openPage('gallery')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('gallery')}">Gallery</div></div>
-              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" onclick="openPage('reviews')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('reviews')}">Reviews</div></div>
-              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" onclick="openPage('contact')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('contact')}">Contact</div></div>
-              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" onclick="openPage('blog')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('blog')}">Blog</div></div>
+              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" data-page="about" onclick="openPage('about')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('about')}">About</div></div>
+              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" data-page="gallery" onclick="openPage('gallery')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('gallery')}">Gallery</div></div>
+              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" data-page="reviews" onclick="openPage('reviews')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('reviews')}">Reviews</div></div>
+              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" data-page="contact" onclick="openPage('contact')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('contact')}">Contact</div></div>
+              <div class="tree-cell"><div class="page-box core" role="button" tabindex="0" data-page="blog" onclick="openPage('blog')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('blog')}">Blog</div></div>
             </div>
           </div>
           <div class="pyramid-trunk"></div>
           <div class="pyramid-tier">
             <div class="pyramid-tier-label">Tier 2 &middot; Pillar Pages</div>
             <div class="pyramid-row">
-              <div class="tree-cell"><div class="page-box pillar has-silos" data-count="+6" role="button" tabindex="0" onclick="openPage('services')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('services')}">Services</div></div>
-              <div class="tree-cell"><div class="page-box pillar has-silos" data-count="+6" role="button" tabindex="0" onclick="openPage('locations')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('locations')}">Locations</div></div>
-              <div class="tree-cell"><div class="page-box pillar" role="button" tabindex="0" onclick="openPage('whyus')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('whyus')}">Why Us</div></div>
-              <div class="tree-cell"><div class="page-box pillar" role="button" tabindex="0" onclick="openPage('process')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('process')}">Process</div></div>
+              <div class="tree-cell"><div class="page-box pillar has-silos" data-count="+6" role="button" tabindex="0" data-page="services" onclick="openPage('services')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('services')}">Services</div></div>
+              <div class="tree-cell"><div class="page-box pillar has-silos" data-count="+6" role="button" tabindex="0" data-page="locations" onclick="openPage('locations')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('locations')}">Locations</div></div>
+              <div class="tree-cell"><div class="page-box pillar" role="button" tabindex="0" data-page="whyus" onclick="openPage('whyus')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('whyus')}">Why Us</div></div>
+              <div class="tree-cell"><div class="page-box pillar" role="button" tabindex="0" data-page="process" onclick="openPage('process')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openPage('process')}">Process</div></div>
             </div>
           </div>
           <div class="pyramid-silos">
@@ -1879,11 +1879,11 @@ details.proposal-collapsible[open] > .ps-summary{
       <div class="value-stack">
         <div class="value-stack-head">What's stacked into this</div>
         <div class="value-stack-list">
-          <div class="vs-item"><span class="vs-name">Custom Roofing Website Build (40+ pages)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R17,700</s></span></span></div>
-          <div class="vs-item"><span class="vs-name">AI Lead-Handling Stack (AI Infrastructure)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R5,900</s></span></span></div>
-          <div class="vs-item"><span class="vs-name">SEO Foundation + Schema + AEO setup</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R4,720</s></span></span></div>
-          <div class="vs-item"><span class="vs-name">Hosting &middot; SSL</span><span class="vs-msrp">R1,180</span></div>
-          <div class="vs-item"><span class="vs-name">Reputation + Review Auto-Engine</span><span class="vs-msrp">R2,065</span></div>
+          <div class="vs-item" data-vs="build"><span class="vs-name">Custom Roofing Website Build (40+ pages)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R17,700</s></span></span></div>
+          <div class="vs-item" data-vs="ai"><span class="vs-name">AI Lead-Handling Stack (AI Infrastructure)</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R5,900</s></span></span></div>
+          <div class="vs-item" data-vs="seo"><span class="vs-name">SEO Foundation + Schema + AEO setup</span><span class="vs-msrp"><span style="display:inline-flex;align-items:center;gap:8px"><s style="color:rgba(0,0,0,0.45);text-decoration:line-through;text-decoration-color:#AE312D;text-decoration-thickness:2px">R4,720</s></span></span></div>
+          <div class="vs-item" data-vs="hosting"><span class="vs-name">Hosting &middot; SSL</span><span class="vs-msrp">R1,180</span></div>
+          <div class="vs-item" data-vs="reputation"><span class="vs-name">Reputation + Review Auto-Engine</span><span class="vs-msrp">R2,065</span></div>
         </div>
         <div class="value-stack-total">
           <div class="vt-label">
@@ -2657,7 +2657,8 @@ const LIVE_PREVIEW_URL = "https://cloud-nine-roofing-and-renovation.vercel.app";
 function openPage(id){
   const data = PAGE_DATA[id];
   if(!data) return;
-  document.getElementById('pageDialogTitle').textContent = (window.NEXUS_TPL?window.NEXUS_TPL(data.title):data.title);
+  var __al=(window.NEXUS_CFG&&window.NEXUS_CFG.wf&&window.NEXUS_CFG.wf.arch&&window.NEXUS_CFG.wf.arch[id])||data.title;
+  document.getElementById('pageDialogTitle').textContent = (window.NEXUS_TPL?window.NEXUS_TPL(__al):__al);
   document.getElementById('pageDialogMeta').textContent = data.sections.length + ' sections · canonical scroll order';
   const body = document.getElementById('pageDialogBody');
   // Live-page link header (only when data.url is set + we have a deploy URL).
@@ -2932,6 +2933,8 @@ document.addEventListener('DOMContentLoaded', function(){
     { id:'social', name:'Social Media Management',   desc:'IG + FB + TikTok organic content, 12 posts/mo.',            monthly:10000 },
   ];
 
+  window.NEXUS_ADDONS = ADDONS;
+
   // ---- localStorage helpers ----
   function getSelected(){
     try { return JSON.parse(localStorage.getItem(ADDON_KEY) || '[]'); } catch(e){ return []; }
@@ -3018,6 +3021,10 @@ document.addEventListener('DOMContentLoaded', function(){
     updateValueStackTotal();
     fireRoiUpdaters();
   }
+  window.KCA_REFRESH = refreshAll;
+  window.KCA_GET_SELECTED = getSelected;
+  window.KCA_SET_SELECTED = setSelected;
+
   // Expose remove from chip click
   window.__KCA_REMOVE_ADDON = function(id){
     var sel = getSelected().filter(function(x){ return x !== id; });
@@ -3141,42 +3148,84 @@ document.addEventListener('DOMContentLoaded', function(){
 .nosleep-card p{font-size:15px;line-height:1.6;color:rgba(255,255,255,0.72)}
 .nosleep-card .pill{display:inline-block;margin-bottom:14px;font-family:'Montserrat',sans-serif;font-size:10.5px;font-weight:800;letter-spacing:0.14em;text-transform:uppercase;color:#030303;background:#EEB644;padding:4px 10px;border-radius:999px}
 .laptop-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:14px;color:#EEB644;background:linear-gradient(135deg,#15171a,#23262b);line-height:1.5}
+
+/* Mobile/tablet fix · Your Investment tiers no longer clip */
+@media (max-width:640px){
+  .pricing-tiers{gap:14px}
+  .pricing-tier.primary .pt-amount{font-size:clamp(38px,12.5vw,72px)}
+  .pricing-tier.secondary .pt-amount{font-size:clamp(24px,7.5vw,42px)}
+  .pricing-tier .pt-amount{white-space:nowrap}
+  .pricing-tier-plus{font-size:24px;padding-bottom:10px}
+}
+@media (max-width:400px){
+  .pricing-tiers{flex-direction:column;align-items:center;gap:4px}
+  .pricing-tier-plus{display:none}
+}
+
+/* Setup gate (multi-step) */
 #nexusGate{position:fixed;inset:0;z-index:99999;background:linear-gradient(160deg,#0b0b0c 0%,#1c1f23 100%);display:flex;align-items:center;justify-content:center;padding:24px;overflow-y:auto}
 #nexusGate[hidden]{display:none}
-.ng-card{width:100%;max-width:560px;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:40px 38px;box-shadow:0 30px 80px rgba(0,0,0,0.6);margin:auto}
-.ng-brand{display:flex;align-items:center;gap:10px;margin-bottom:6px}
-.ng-brand .nexus-word{font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;color:#fff}
-.ng-brand svg{width:24px;height:24px}
-.ng-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:25px;color:#fff;letter-spacing:-0.015em;margin:14px 0 4px}
-.ng-sub{font-size:14px;color:rgba(255,255,255,0.6);margin-bottom:26px;line-height:1.55}
-.ng-field{margin-bottom:18px}
-.ng-field label{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#EEB644;margin-bottom:7px}
-.ng-field input,.ng-field select{width:100%;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:12px 14px;color:#fff;font-size:15px;font-family:'Open Sans',sans-serif;outline:none;transition:border-color .15s}
+.ng-card{width:100%;max-width:580px;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:20px;padding:34px 34px 30px;box-shadow:0 30px 80px rgba(0,0,0,0.6);margin:auto}
+.ng-brand{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.ng-brand .nexus-word{font-family:'Montserrat',sans-serif;font-weight:800;font-size:20px;color:#fff}
+.ng-brand svg{width:22px;height:22px}
+.ng-steps{display:flex;gap:6px;margin:16px 0 6px}
+.ng-steps span{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,0.12)}
+.ng-steps span.on{background:#EEB644}
+.ng-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:22px;color:#fff;letter-spacing:-0.015em;margin:8px 0 2px}
+.ng-sub{font-size:13.5px;color:rgba(255,255,255,0.55);margin-bottom:20px;line-height:1.5}
+.ng-step{display:none}
+.ng-step.on{display:block}
+.ng-field{margin-bottom:15px}
+.ng-field label{display:block;font-family:'Montserrat',sans-serif;font-weight:700;font-size:10.5px;letter-spacing:0.09em;text-transform:uppercase;color:#EEB644;margin-bottom:6px}
+.ng-field input,.ng-field select{width:100%;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:10px;padding:11px 13px;color:#fff;font-size:14.5px;font-family:'Open Sans',sans-serif;outline:none;transition:border-color .15s}
 .ng-field input:focus,.ng-field select:focus{border-color:#EEB644}
 .ng-field input[type=file]{padding:9px 12px;font-size:13px;color:rgba(255,255,255,0.7)}
-.ng-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media (max-width:520px){.ng-row{grid-template-columns:1fr}}
-.ng-hint{font-size:12px;color:rgba(255,255,255,0.4);margin-top:6px}
-.ng-logo-prev{margin-top:10px;height:42px;max-width:160px;object-fit:contain;display:none;background:#fff;border-radius:6px;padding:4px}
-.ng-launch{width:100%;margin-top:10px;background:#AE312D;color:#fff;border:none;border-radius:11px;padding:15px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:15px;letter-spacing:0.03em;text-transform:uppercase;cursor:pointer;transition:background .15s,transform .1s}
-.ng-launch:hover{background:#7A1F1C;transform:translateY(-1px)}
-.ng-skip{display:block;width:100%;text-align:center;margin-top:14px;background:none;border:none;color:rgba(255,255,255,0.45);font-size:13px;cursor:pointer;text-decoration:underline}
-#nexusEditBtn{position:fixed;right:18px;bottom:18px;z-index:9000;background:#030303;color:#EEB644;border:1px solid rgba(238,182,68,0.5);border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,0.35);transition:background .15s,color .15s}
+.ng-row{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.ng-row-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:13px}
+@media (max-width:520px){.ng-row,.ng-row-3{grid-template-columns:1fr}}
+.ng-hint{font-size:11.5px;color:rgba(255,255,255,0.4);margin-top:5px}
+.ng-grouphdr{font-family:'Montserrat',sans-serif;font-weight:800;font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.5);margin:18px 0 10px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.08)}
+.ng-logo-prev{margin-top:10px;height:40px;max-width:160px;object-fit:contain;display:none;background:#fff;border-radius:6px;padding:4px}
+.ng-nav{display:flex;gap:10px;margin-top:18px}
+.ng-btn{flex:1;border:none;border-radius:11px;padding:14px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;letter-spacing:0.03em;text-transform:uppercase;cursor:pointer;transition:background .15s,transform .1s}
+.ng-back{background:rgba(255,255,255,0.08);color:#fff;flex:0 0 34%}
+.ng-back:hover{background:rgba(255,255,255,0.14)}
+.ng-next,.ng-launch{background:#AE312D;color:#fff}
+.ng-next:hover,.ng-launch:hover{background:#7A1F1C;transform:translateY(-1px)}
+.ng-skip{display:block;width:100%;text-align:center;margin-top:12px;background:none;border:none;color:rgba(255,255,255,0.45);font-size:12.5px;cursor:pointer;text-decoration:underline}
+
+/* Agent floating buttons */
+#nexusEditBtn,#nexusCompleteBtn,#nexusClientsBtn{position:fixed;right:18px;z-index:9000;border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,0.35);transition:background .15s,color .15s,transform .1s;border:1px solid rgba(238,182,68,0.5)}
+#nexusEditBtn{bottom:18px;background:#030303;color:#EEB644}
 #nexusEditBtn:hover{background:#EEB644;color:#030303}
-#nexusCompleteBtn{position:fixed;right:18px;bottom:62px;z-index:9000;background:#AE312D;color:#fff;border:none;border-radius:999px;padding:11px 18px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;letter-spacing:0.06em;text-transform:uppercase;cursor:pointer;box-shadow:0 8px 24px rgba(174,49,45,0.4);transition:background .15s,transform .1s}
+#nexusCompleteBtn{bottom:62px;background:#AE312D;color:#fff;border-color:transparent}
 #nexusCompleteBtn:hover{background:#7A1F1C;transform:translateY(-1px)}
-#nexusShare{position:fixed;inset:0;z-index:99998;background:rgba(3,3,3,0.72);display:flex;align-items:center;justify-content:center;padding:24px}
-#nexusShare[hidden]{display:none}
-#nexusShare .ns-card{width:100%;max-width:520px;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:32px;box-shadow:0 30px 80px rgba(0,0,0,0.6)}
-#nexusShare h3{font-family:'Montserrat',sans-serif;color:#fff;font-size:21px;margin-bottom:6px;line-height:1.25}
-#nexusShare p{color:rgba(255,255,255,0.6);font-size:13.5px;margin-bottom:18px;line-height:1.5}
-#nexusShare .ns-link{display:flex;gap:8px}
-#nexusShare input{flex:1;min-width:0;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:9px;padding:11px 13px;color:#fff;font-size:12.5px;font-family:monospace}
-#nexusShare .ns-copy{background:#EEB644;color:#030303;border:none;border-radius:9px;padding:0 16px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;text-transform:uppercase;cursor:pointer}
-#nexusShare .ns-ok{margin-top:12px;color:#5BD68D;font-size:12.5px;display:none}
-#nexusShare .ns-actions{display:flex;justify-content:space-between;align-items:center;margin-top:18px}
-#nexusShare a.ns-open{color:#EEB644;font-size:13px;text-decoration:underline}
-#nexusShare .ns-close{background:none;border:none;color:rgba(255,255,255,0.5);font-size:13px;cursor:pointer;text-decoration:underline}
+#nexusClientsBtn{bottom:106px;background:#0E1430;color:#EEB644}
+#nexusClientsBtn:hover{background:#EEB644;color:#030303}
+/* Client payment CTA */
+#nexusPayBtn{position:fixed;right:18px;bottom:18px;z-index:9000;background:#EEB644;color:#030303;border:none;border-radius:999px;padding:14px 26px;font-family:'Montserrat',sans-serif;font-weight:900;font-size:14px;letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;box-shadow:0 10px 30px rgba(238,182,68,0.45);text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .12s,background .15s}
+#nexusPayBtn:hover{background:#f5cf6e;transform:translateY(-2px)}
+
+/* Share + clients modals */
+.nx-modal{position:fixed;inset:0;z-index:99998;background:rgba(3,3,3,0.72);display:flex;align-items:center;justify-content:center;padding:24px}
+.nx-modal[hidden]{display:none}
+.nx-modal .nx-card{width:100%;max-width:540px;max-height:86vh;overflow:auto;background:#141518;border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:30px;box-shadow:0 30px 80px rgba(0,0,0,0.6)}
+.nx-card h3{font-family:'Montserrat',sans-serif;color:#fff;font-size:20px;margin-bottom:6px;line-height:1.25}
+.nx-card p{color:rgba(255,255,255,0.6);font-size:13px;margin-bottom:16px;line-height:1.5}
+.nx-link{display:flex;gap:8px}
+.nx-link input{flex:1;min-width:0;background:#0c0d0f;border:1px solid rgba(255,255,255,0.14);border-radius:9px;padding:11px 13px;color:#fff;font-size:12px;font-family:monospace}
+.nx-copy{background:#EEB644;color:#030303;border:none;border-radius:9px;padding:0 16px;font-family:'Montserrat',sans-serif;font-weight:800;font-size:12px;text-transform:uppercase;cursor:pointer}
+.nx-ok{margin-top:10px;color:#5BD68D;font-size:12px;display:none}
+.nx-actions{display:flex;justify-content:space-between;align-items:center;margin-top:16px}
+.nx-actions a{color:#EEB644;font-size:13px;text-decoration:underline}
+.nx-close{background:none;border:none;color:rgba(255,255,255,0.5);font-size:13px;cursor:pointer;text-decoration:underline}
+.nx-client-row{display:flex;align-items:center;gap:10px;padding:12px 0;border-top:1px solid rgba(255,255,255,0.08)}
+.nx-client-row .nx-cr-info{flex:1;min-width:0}
+.nx-client-row .nx-cr-name{font-family:'Montserrat',sans-serif;font-weight:700;color:#fff;font-size:14px}
+.nx-client-row .nx-cr-meta{color:rgba(255,255,255,0.45);font-size:11.5px}
+.nx-client-row button{background:rgba(238,182,68,0.12);border:1px solid rgba(238,182,68,0.4);color:#EEB644;border-radius:8px;padding:6px 11px;font-size:11px;font-weight:700;cursor:pointer;font-family:'Montserrat',sans-serif;text-transform:uppercase}
+.nx-empty{color:rgba(255,255,255,0.4);font-size:13px;padding:18px 0}
 body.ng-locked{overflow:hidden}
 </style>
 
@@ -3185,287 +3234,315 @@ body.ng-locked{overflow:hidden}
   "use strict";
   var MARK = '<svg class="nexus-mark" viewBox="0 0 100 100" aria-hidden="true"><rect x="44" y="10" width="46" height="46" fill="#fff"/><rect x="10" y="44" width="46" height="46" fill="#fff"/><rect x="44" y="44" width="12" height="12" fill="#030303"/></svg>';
   var KEY = 'nexusDemoConfig';
+  var REG_KEY = 'nexusClients';
+  var OFFER_KEY = 'kca-one-time-offer-cloud-nine-roofing-and-renovation-zar';
   var SA_PHONE = '010 123 4567';
   var origTitle = document.title;
   var stored = null;
 
+  var PRICE_DEF = { setup:'22,000', monthly:'1,500', offer:'15,000',
+    vs:{build:'17,700',ai:'5,900',seo:'4,720',hosting:'1,180',reputation:'2,065'},
+    services:{gads_seo:'12,000',fb:'12,000',social:'10,000'} };
+  var WF_DEF = {
+    title:'The Winning Formula.', subtitle:'Three levers. Pull all three and the math works every time.',
+    pillars:{ traffic:{term:'Traffic',tag:'Get found first on Google + AI'},
+              trust:{term:'Trust',tag:'Win them in 5 seconds'},
+              conversion:{term:'Conversion',tag:'Turn visits into booked estimates'} },
+    arch:{ home:'Home',about:'About',gallery:'Gallery',reviews:'Reviews',contact:'Contact',blog:'Blog',
+           services:'Services',locations:'Locations',whyus:'Why Us',process:'Process' } };
+
   var SECTION_IDS = { home:'home-100', services:'services-101', about:'about-102', contact:'contact-103', blog:'blog-104', locations:'locations-105', gallery:'gallery-106', reviews:'reviews-107', process:'process-108', whyus:'why-us-109' };
-  function slugId(sec){
-    if(SECTION_IDS[sec]) return SECTION_IDS[sec];
-    var slug=String(sec||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-    return (slug||'page')+'-100';
-  }
+  function slugId(sec){ if(SECTION_IDS[sec]) return SECTION_IDS[sec]; var s=String(sec||'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); return (s||'page')+'-100'; }
 
   var VOCAB = {
-    roofer:  {industry:'roofing',           pro:'roofer',             pros:'roofers',             unit:'roof',      units:'roofs'},
-    hvac:    {industry:'HVAC',              pro:'HVAC contractor',    pros:'HVAC contractors',    unit:'system',    units:'systems'},
-    kitchen: {industry:'kitchen remodeling',pro:'kitchen remodeler',  pros:'kitchen remodelers',  unit:'remodel',   units:'remodels'},
-    solar:   {industry:'solar',            pro:'solar installer',    pros:'solar installers',    unit:'install',   units:'installs'},
-    pest:    {industry:'pest control',      pro:'pest control pro',   pros:'pest control pros',   unit:'treatment', units:'jobs'}
+    roofer:  {industry:'roofing',           pro:'roofer',           pros:'roofers',           unit:'roof',      units:'roofs'},
+    hvac:    {industry:'HVAC',              pro:'HVAC contractor',  pros:'HVAC contractors',  unit:'system',    units:'systems'},
+    kitchen: {industry:'kitchen remodeling',pro:'kitchen remodeler',pros:'kitchen remodelers',unit:'remodel',   units:'remodels'},
+    solar:   {industry:'solar',            pro:'solar installer',  pros:'solar installers',  unit:'install',   units:'installs'},
+    pest:    {industry:'pest control',      pro:'pest control pro', pros:'pest control pros', unit:'treatment', units:'jobs'}
   };
-  function vocab(c){
-    if(c.niche==='custom' && c.customNiche){
-      var n=c.customNiche.trim();
-      return {industry:n.toLowerCase(), pro:n.toLowerCase()+' specialist', pros:n.toLowerCase()+' specialists', unit:'job', units:'jobs'};
-    }
-    return VOCAB[c.niche] || VOCAB.roofer;
-  }
+  function vocab(c){ if(c.niche==='custom'&&c.customNiche){var n=c.customNiche.trim();return{industry:n.toLowerCase(),pro:n.toLowerCase()+' specialist',pros:n.toLowerCase()+' specialists',unit:'job',units:'jobs'};} return VOCAB[c.niche]||VOCAB.roofer; }
   function ucFirst(s){ return s.charAt(0).toUpperCase()+s.slice(1); }
-  function caseRepl(match, repl){
-    if(match===match.toUpperCase() && match.toLowerCase()!==match) return repl.toUpperCase();
-    if(match.charAt(0)===match.charAt(0).toUpperCase()) return ucFirst(repl);
-    return repl;
-  }
-  function domainFromLink(link){
-    if(!link) return '';
-    try{ var u=new URL(/^https?:\/\//.test(link)?link:'https://'+link); return u.hostname.replace(/^www\./,''); }
-    catch(e){ return ''; }
-  }
+  function caseRepl(m,r){ if(m===m.toUpperCase()&&m.toLowerCase()!==m) return r.toUpperCase(); if(m.charAt(0)===m.charAt(0).toUpperCase()) return ucFirst(r); return r; }
+  function domainFromLink(link){ if(!link) return ''; try{ var u=new URL(/^https?:\/\//.test(link)?link:'https://'+link); return u.hostname.replace(/^www\./,''); }catch(e){ return ''; } }
+  function fmtMoney(v){ var n=parseInt(String(v==null?'':v).replace(/[^0-9]/g,''),10); if(isNaN(n)||n<0) return ''; return n.toLocaleString('en-US'); }
+  function pInt(v,def){ var n=parseInt(String(v==null?'':v).replace(/[^0-9]/g,''),10); return isNaN(n)?parseInt(String(def).replace(/[^0-9]/g,''),10):n; }
+
   function replaceMarkers(str,c,v){
     var s=str;
-    s=s.replace(/Cloud Nine Roofing and Renovation/g, c.client);
-    s=s.replace(/CLOUD NINE/g, (c.client||'').toUpperCase());
-    s=s.replace(/Cloud Nine/g, c.client);
-    s=s.replace(/Greater Noblesville/g, 'Greater '+c.city);
-    s=s.replace(/Noblesville/g, c.city);
-    s=s.replace(/callcloudnine\.com/g, c.domain || 'yourclient.com');
-    s=s.replace(/317-900-4262/g, SA_PHONE);
-    s=s.replace(/\bIndiana\b/g, 'South Africa');
-    s=s.replace(/Matt's/g, "the owner's");
-    s=s.replace(/\bMatt\b/g, 'the owner');
-    s=s.replace(/roofing contractors/gi, function(m){return caseRepl(m,v.pros);});
-    s=s.replace(/roofing contractor/gi, function(m){return caseRepl(m,v.pro);});
-    s=s.replace(/roofing/gi, function(m){return caseRepl(m,v.industry);});
-    s=s.replace(/roofers/gi, function(m){return caseRepl(m,v.pros);});
-    s=s.replace(/roofer/gi, function(m){return caseRepl(m,v.pro);});
-    s=s.replace(/\bRoofs\b/g, function(){return ucFirst(v.units);});
-    s=s.replace(/\broofs\b/g, function(){return v.units;});
-    s=s.replace(/\bRoof\b/g, function(){return ucFirst(v.unit);});
-    s=s.replace(/\broof\b/g, function(){return v.unit;});
+    s=s.replace(/Cloud Nine Roofing and Renovation/g,c.client);
+    s=s.replace(/CLOUD NINE/g,(c.client||'').toUpperCase());
+    s=s.replace(/Cloud Nine/g,c.client);
+    s=s.replace(/Greater Noblesville/g,'Greater '+c.city);
+    s=s.replace(/Noblesville/g,c.city);
+    s=s.replace(/callcloudnine\.com/g,c.domain||'yourclient.com');
+    s=s.replace(/317-900-4262/g,SA_PHONE);
+    s=s.replace(/\bIndiana\b/g,'South Africa');
+    s=s.replace(/Matt's/g,"the owner's");
+    s=s.replace(/\bMatt\b/g,'the owner');
+    s=s.replace(/roofing contractors/gi,function(m){return caseRepl(m,v.pros);});
+    s=s.replace(/roofing contractor/gi,function(m){return caseRepl(m,v.pro);});
+    s=s.replace(/roofing/gi,function(m){return caseRepl(m,v.industry);});
+    s=s.replace(/roofers/gi,function(m){return caseRepl(m,v.pros);});
+    s=s.replace(/roofer/gi,function(m){return caseRepl(m,v.pro);});
+    s=s.replace(/\bRoofs\b/g,function(){return ucFirst(v.units);});
+    s=s.replace(/\broofs\b/g,function(){return v.units;});
+    s=s.replace(/\bRoof\b/g,function(){return ucFirst(v.unit);});
+    s=s.replace(/\broof\b/g,function(){return v.unit;});
     return s;
   }
-  window.NEXUS_TPL = function(str){ var c=window.NEXUS_CFG||defaults(); return replaceMarkers(String(str==null?'':str),c,vocab(c)); };
-  window.nexusSlugId = slugId;
+  window.NEXUS_TPL=function(str){ var c=window.NEXUS_CFG||defaults(); return replaceMarkers(String(str==null?'':str),c,vocab(c)); };
+  window.nexusSlugId=slugId;
 
   function collect(){
     stored={text:[],attr:[]};
-    var walker=document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
-      acceptNode:function(n){
-        if(!n.nodeValue || !n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
-        var p=n.parentNode; if(!p) return NodeFilter.FILTER_REJECT;
-        var tag=p.nodeName; if(tag==='SCRIPT'||tag==='STYLE') return NodeFilter.FILTER_REJECT;
-        if(p.closest && p.closest('#nexusGate,#nexusEditBtn')) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      }
-    });
+    var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      if(!n.nodeValue||!n.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      var p=n.parentNode; if(!p) return NodeFilter.FILTER_REJECT;
+      if(p.nodeName==='SCRIPT'||p.nodeName==='STYLE') return NodeFilter.FILTER_REJECT;
+      if(p.closest&&p.closest('#nexusGate,#nexusEditBtn,#nexusCompleteBtn,#nexusClientsBtn,#nexusPayBtn,.nx-modal')) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    }});
     var n; while(n=walker.nextNode()) stored.text.push({node:n,o:n.nodeValue});
     var attrs=['alt','aria-label','title','placeholder'];
     document.querySelectorAll('['+attrs.join('],[')+']').forEach(function(el){
-      if(el.closest('#nexusGate,#nexusEditBtn')) return;
+      if(el.closest('#nexusGate,.nx-modal')) return;
       attrs.forEach(function(a){ if(el.hasAttribute(a)) stored.attr.push({el:el,a:a,o:el.getAttribute(a)}); });
     });
     document.querySelectorAll('[href],[src]').forEach(function(el){
-      ['href','src'].forEach(function(a){
-        if(el.hasAttribute(a)){
-          var val=el.getAttribute(a);
-          if(/cloud-nine-roofing-and-renovation\.vercel\.app|callcloudnine/.test(val)) stored.attr.push({el:el,a:a,o:val,link:true});
-        }
-      });
+      ['href','src'].forEach(function(a){ if(el.hasAttribute(a)){ var val=el.getAttribute(a); if(/cloud-nine-roofing-and-renovation\.vercel\.app|callcloudnine/.test(val)) stored.attr.push({el:el,a:a,o:val,link:true}); } });
     });
   }
+
+  function setVs(key,val){ var it=document.querySelector('.vs-item[data-vs="'+key+'"] .vs-msrp'); if(!it) return; var n='R'+val; var s=it.querySelector('s'); if(s) s.textContent=n; else it.textContent=n; }
+  function applyPricing(c){
+    if(!window.KCA_PRICING) return;
+    var vs=c.vs||{}, D=PRICE_DEF;
+    setVs('build',vs.build||D.vs.build); setVs('ai',vs.ai||D.vs.ai); setVs('seo',vs.seo||D.vs.seo);
+    setVs('hosting',vs.hosting||D.vs.hosting); setVs('reputation',vs.reputation||D.vs.reputation);
+    var sv=c.services||{};
+    if(window.NEXUS_ADDONS){ window.NEXUS_ADDONS.forEach(function(a){ var val=sv[a.id]; a.monthly = (val!=null&&String(val).trim()!=='') ? pInt(val,a.monthly) : pInt(D.services[a.id], a.monthly); }); }
+    if(window.KCA_SET_SELECTED) window.KCA_SET_SELECTED(Array.isArray(c.addonsSelected)?c.addonsSelected:[]);
+    window.KCA_PRICING.baseSetup=pInt(c.setup,D.setup);
+    window.KCA_PRICING.baseMonthly=pInt(c.monthly,D.monthly);
+    if(window.KCA_REFRESH) window.KCA_REFRESH();
+  }
+  function applyWF(c){
+    var wf=c.wf||{}, D=WF_DEF, sec=document.querySelector('.section-formula');
+    if(sec){
+      var t=sec.querySelector('.section-title'); if(t&&(wf.title)) t.textContent=wf.title;
+      var sb=sec.querySelector('.section-sub'); if(sb&&(wf.subtitle)) sb.textContent=wf.subtitle;
+      var pil=wf.pillars||{};
+      ['traffic','trust','conversion'].forEach(function(k){
+        var p=pil[k]||{}, box=sec.querySelector('.formula-pillar[data-pillar="'+k+'"]'); if(!box) return;
+        if(p.term){ var tm=box.querySelector('.formula-pillar-term'); if(tm) tm.textContent=p.term; }
+        if(p.tag){ var tg=box.querySelector('.formula-pillar-tag'); if(tg) tg.textContent=p.tag; }
+      });
+    }
+    var arch=wf.arch||{};
+    Object.keys(D.arch).forEach(function(id){ var lbl=arch[id]; if(lbl){ var b=document.querySelector('.page-box[data-page="'+id+'"]'); if(b) b.textContent=lbl; } });
+  }
+
   function applyConfig(c){
     window.NEXUS_CFG=c;
     if(!stored) collect();
     var v=vocab(c); c.domain=domainFromLink(c.link);
     stored.text.forEach(function(t){ t.node.nodeValue=replaceMarkers(t.o,c,v); });
     stored.attr.forEach(function(t){
-      if(t.link){
-        var el=t.el;
-        if(el.classList && el.classList.contains('laptop-iframe')) return; // handled below
-        if(el.hasAttribute('data-sec')){ el.setAttribute(t.a, c.link ? String(c.link).replace(/\/$/,'')+'/'+slugId(el.getAttribute('data-sec')) : '#'); }
-        else { el.setAttribute(t.a, c.link || (t.a==='src'?'about:blank':'#')); }
-      } else {
-        t.el.setAttribute(t.a, replaceMarkers(t.o,c,v));
-      }
+      if(t.link){ var el=t.el;
+        if(el.classList&&el.classList.contains('laptop-iframe')) return;
+        if(el.hasAttribute('data-sec')){ el.setAttribute(t.a, c.link?String(c.link).replace(/\/$/,'')+'/'+slugId(el.getAttribute('data-sec')):'#'); }
+        else { el.setAttribute(t.a, c.link||(t.a==='src'?'about:blank':'#')); }
+      } else { t.el.setAttribute(t.a, replaceMarkers(t.o,c,v)); }
     });
     document.title=replaceMarkers(origTitle,c,v);
-
-    // client logo / name fallback
     var cl=document.getElementById('clientLogo');
-    if(cl){
-      var mark=cl.parentNode;
-      var tx=mark.querySelector('.topbar-client-text');
+    if(cl){ var mark=cl.parentNode, tx=mark.querySelector('.topbar-client-text');
       if(c.logo){ cl.src=c.logo; cl.style.display=''; if(tx) tx.style.display='none'; }
-      else {
-        cl.style.display='none';
-        if(!tx){ tx=document.createElement('span'); tx.className='topbar-client-text'; mark.appendChild(tx); }
-        tx.style.display=''; tx.textContent=c.client;
-      }
+      else { cl.style.display='none'; if(!tx){ tx=document.createElement('span'); tx.className='topbar-client-text'; mark.appendChild(tx); } tx.style.display=''; tx.textContent=c.client; } }
+    var url=document.querySelector('.laptop-url'); if(url) url.textContent='🔒  '+(c.domain||'yourclient.com')+' (live preview)';
+    var ifr=document.querySelector('.laptop-iframe'), vp=document.querySelector('.laptop-viewport');
+    if(ifr){ if(c.link){ ifr.src=c.link; ifr.style.display=''; if(vp){ var ph0=vp.querySelector('.laptop-ph'); if(ph0) ph0.style.display='none'; } }
+      else { ifr.removeAttribute('src'); ifr.style.display='none'; if(vp){ vp.style.position='relative'; var ph=vp.querySelector('.laptop-ph'); if(!ph){ ph=document.createElement('div'); ph.className='laptop-ph'; vp.appendChild(ph); } ph.style.display='flex'; ph.textContent='Add the client’s website link to load the live preview.'; } } }
+    document.querySelectorAll('.cover-open-live').forEach(function(a){ a.href=c.link||'#'; });
+    // reveal one-time offer
+    if(c.offer){ try{ localStorage.setItem(OFFER_KEY,c.offer); }catch(e){} var sf=document.getElementById('setupFeeAmount'); if(sf) sf.textContent='R'+c.offer; }
+    // prices + winning formula
+    applyPricing(c); applyWF(c);
+    // client-view: hide agent controls, show payment CTA
+    if(window.__NEXUS_CLIENT_VIEW){
+      document.querySelectorAll('.addon-footer-btn,.pricing-edit-btn').forEach(function(e){ e.style.display='none'; });
+      ensurePayBtn(c);
     }
-    // laptop preview
-    var url=document.querySelector('.laptop-url');
-    if(url){ url.textContent='🔒  '+(c.domain||'yourclient.com')+' (live preview)'; }
-    var ifr=document.querySelector('.laptop-iframe');
-    var vp=document.querySelector('.laptop-viewport');
-    if(ifr){
-      if(c.link){
-        ifr.src=c.link; ifr.style.display='';
-        if(vp){ var ph0=vp.querySelector('.laptop-ph'); if(ph0) ph0.style.display='none'; }
-      } else {
-        ifr.removeAttribute('src'); ifr.style.display='none';
-        if(vp){ vp.style.position='relative'; var ph=vp.querySelector('.laptop-ph'); if(!ph){ ph=document.createElement('div'); ph.className='laptop-ph'; vp.appendChild(ph); } ph.style.display='flex'; ph.textContent='Add the client’s website link to load the live preview.'; }
-      }
-    }
-    // reveal one-time offer amount (read by getSetupFee/openSetupFeeModal)
-    if(c.offer){
-      try{ localStorage.setItem(OFFER_KEY, c.offer); }catch(e){}
-      var sf=document.getElementById('setupFeeAmount'); if(sf) sf.textContent='R'+c.offer;
-    }
-    // generic open-live buttons -> client root (covers any not caught above)
-    document.querySelectorAll('.cover-open-live').forEach(function(a){ a.href = c.link || '#'; });
   }
 
-  var OFFER_KEY = 'kca-one-time-offer-cloud-nine-roofing-and-renovation-zar';
-  function fmtMoney(v){ var n=parseInt(String(v).replace(/[^0-9]/g,''),10); if(isNaN(n)||n<0) return ''; return n.toLocaleString('en-US'); }
-  function defaults(){ return {niche:'roofer',customNiche:'',client:'Nexus Solution',city:'Hazelview, Robincrest 969',link:'',logo:'',offer:'15,000'}; }
+  function defaults(){ return {niche:'roofer',customNiche:'',client:'Nexus Solution',city:'Hazelview, Robincrest 969',link:'',logo:'',offer:'15,000',paymentLink:'',
+    setup:'',monthly:'',vs:{},services:{},addonsSelected:[],wf:{}}; }
   function load(){ try{ return JSON.parse(localStorage.getItem(KEY)); }catch(e){ return null; } }
-  function save(c){ try{ localStorage.setItem(KEY, JSON.stringify(c)); }catch(e){} }
+  function save(c){ try{ localStorage.setItem(KEY,JSON.stringify(c)); }catch(e){} }
 
+  // ---- share link (no backend) ----
+  function getShareParam(){ var m=location.search.match(/[?&]c=([^&]+)/); if(m) return decodeURIComponent(m[1]); var h=location.hash.match(/[#&]c=([^&]+)/); if(h) return decodeURIComponent(h[1]); return null; }
+  function encodeCfg(c){ try{ return btoa(unescape(encodeURIComponent(JSON.stringify(c)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }catch(e){ return ''; } }
+  function decodeCfg(str){ var b=str.replace(/-/g,'+').replace(/_/g,'/'); try{ return JSON.parse(decodeURIComponent(escape(atob(b)))); }catch(e){ return null; } }
+  function buildShareLink(c){ return location.origin+location.pathname+'?c='+encodeCfg(c); }
+
+  // ---- saved-clients registry (front-end; Lovable swaps to Supabase) ----
+  function regAll(){ try{ return JSON.parse(localStorage.getItem(REG_KEY))||[]; }catch(e){ return []; } }
+  function regAdd(c,link){ var a=regAll().filter(function(x){return x.link!==link;}); a.unshift({client:c.client,niche:c.niche,link:link,ts:Date.now()}); try{ localStorage.setItem(REG_KEY,JSON.stringify(a.slice(0,60))); }catch(e){} }
+
+  window.NEXUS_SUPABASE={url:'',anonKey:''};   // <-- Lovable: paste Supabase creds
+  window.NexusStore={
+    save:function(c){ return Promise.resolve(buildShareLink(c)); },
+    load:function(){ var s=getShareParam(); return s?decodeCfg(s):null; },
+    list:function(){ return Promise.resolve(regAll()); }
+  };
+
+  // ---- modals ----
+  function modal(id){ var w=document.getElementById(id); if(!w){ w=document.createElement('div'); w.id=id; w.className='nx-modal'; document.body.appendChild(w); w.addEventListener('click',function(e){ if(e.target===w) w.hidden=true; }); } return w; }
+  function openShareModal(){
+    var cfg=load()||window.NEXUS_CFG||defaults();
+    if(window.KCA_GET_SELECTED){ cfg.addonsSelected=window.KCA_GET_SELECTED(); save(cfg); window.NEXUS_CFG=cfg; }
+    var w=modal('nexusShare');
+    w.innerHTML='<div class="nx-card"><h3>Proposal saved — send it to '+(cfg.client||'your client')+'</h3>'+
+      '<p>Read-only link with exactly the niche, branding and prices you set. Copy and send via WhatsApp or email.</p>'+
+      '<div class="nx-link"><input id="nsLink" type="text" readonly value="Generating…"><button class="nx-copy" id="nsCopy">Copy</button></div>'+
+      '<div class="nx-ok" id="nsOk">✓ Link copied</div>'+
+      '<div class="nx-actions"><a id="nsOpen" target="_blank" rel="noopener">Open as client ↗</a><button class="nx-close" id="nsClose">Close</button></div></div>';
+    w.hidden=false;
+    Promise.resolve(window.NexusStore.save(cfg)).then(function(link){ var i=document.getElementById('nsLink'); if(i)i.value=link; var o=document.getElementById('nsOpen'); if(o)o.href=link; regAdd(cfg,link); });
+    document.getElementById('nsCopy').addEventListener('click',function(){ var i=document.getElementById('nsLink'); i.select(); i.setSelectionRange(0,99999); var ok=function(){document.getElementById('nsOk').style.display='block';}; if(navigator.clipboard){ navigator.clipboard.writeText(i.value).then(ok,function(){try{document.execCommand('copy');}catch(e){}ok();}); } else { try{document.execCommand('copy');}catch(e){} ok(); } });
+    document.getElementById('nsClose').addEventListener('click',function(){ w.hidden=true; });
+  }
+  function openClientsModal(){
+    var w=modal('nexusClients');
+    w.innerHTML='<div class="nx-card"><h3>Saved clients</h3><p>Demos you\'ve saved. Re-open or copy the link to re-send.</p><div id="nxClientList"></div><div class="nx-actions"><span></span><button class="nx-close" id="ncClose">Close</button></div></div>';
+    w.hidden=false;
+    document.getElementById('ncClose').addEventListener('click',function(){ w.hidden=true; });
+    Promise.resolve(window.NexusStore.list()).then(function(rows){
+      var box=document.getElementById('nxClientList');
+      if(!rows||!rows.length){ box.innerHTML='<div class="nx-empty">No saved clients yet. Set up a demo and hit “Presentation complete”.</div>'; return; }
+      box.innerHTML=rows.map(function(r,i){ var d=new Date(r.ts||Date.now()); return '<div class="nx-client-row"><div class="nx-cr-info"><div class="nx-cr-name">'+(r.client||'Client')+'</div><div class="nx-cr-meta">'+(r.niche||'')+' · '+d.toLocaleDateString()+'</div></div><button data-open="'+i+'">Open</button><button data-copy="'+i+'">Copy link</button></div>'; }).join('');
+      box.querySelectorAll('[data-open]').forEach(function(b){ b.addEventListener('click',function(){ location.href=rows[+b.getAttribute('data-open')].link; }); });
+      box.querySelectorAll('[data-copy]').forEach(function(b){ b.addEventListener('click',function(){ var l=rows[+b.getAttribute('data-copy')].link; if(navigator.clipboard) navigator.clipboard.writeText(l); b.textContent='Copied'; }); });
+    });
+  }
+
+  // ---- multi-step setup form ----
+  function fld(id,label,val,ph,hint){ return '<div class="ng-field"><label>'+label+'</label><input id="'+id+'" type="text" value="'+(val?String(val).replace(/"/g,'&quot;'):'')+'" placeholder="'+(ph||'')+'">'+(hint?'<div class="ng-hint">'+hint+'</div>':'')+'</div>'; }
   function buildGate(prefill){
-    var c=prefill||defaults();
-    var wrap=document.getElementById('nexusGate');
-    if(!wrap){ wrap=document.createElement('div'); wrap.id='nexusGate'; document.body.appendChild(wrap); }
-    wrap.innerHTML=''+
-      '<div class="ng-card">'+
-        '<div class="ng-brand">'+MARK+'<span class="nexus-word">Nexus Solution</span></div>'+
-        '<div class="ng-title">Set up this demo</div>'+
-        '<div class="ng-sub">Tailor the presentation to your prospect, then launch. Everything below populates the page automatically.</div>'+
-        '<div class="ng-field"><label>Niche</label>'+
-          '<select id="ngNiche">'+
-            '<option value="roofer">Roofer</option>'+
-            '<option value="hvac">HVAC</option>'+
-            '<option value="kitchen">Kitchen Remodeler</option>'+
-            '<option value="solar">Solar Company</option>'+
-            '<option value="pest">Pest Control</option>'+
-            '<option value="custom">Custom…</option>'+
-          '</select></div>'+
-        '<div class="ng-field" id="ngCustomWrap" style="display:none"><label>Custom niche</label><input id="ngCustom" type="text" placeholder="e.g. Landscaping"></div>'+
-        '<div class="ng-row">'+
-          '<div class="ng-field"><label>Client / business name</label><input id="ngClient" type="text" placeholder="e.g. Nexus Solution"></div>'+
-          '<div class="ng-field"><label>City / location</label><input id="ngCity" type="text" placeholder="e.g. Nelspruit"></div>'+
-        '</div>'+
-        '<div class="ng-field"><label>Client website link</label><input id="ngLink" type="url" placeholder="https://theirsite.co.za"><div class="ng-hint">Drives the live-preview laptop, "Open Live Site", and every section link.</div></div>'+
-        '<div class="ng-field"><label>One-Time Offer · Reveal (R)</label><input id="ngOffer" type="text" inputmode="numeric" placeholder="15,000"><div class="ng-hint">Sets the amount in the "Reveal One-Time Offer" popup.</div></div>'+
+    var c=prefill||defaults(); var vs=c.vs||{}, sv=c.services||{}, wf=c.wf||{}, pil=wf.pillars||{}, ar=wf.arch||{}, D=PRICE_DEF, W=WF_DEF;
+    var w=document.getElementById('nexusGate'); if(!w){ w=document.createElement('div'); w.id='nexusGate'; document.body.appendChild(w); }
+    w.innerHTML='<div class="ng-card">'+
+      '<div class="ng-brand">'+MARK+'<span class="nexus-word">Nexus Solution</span></div>'+
+      '<div class="ng-steps"><span class="on" data-s="1"></span><span data-s="2"></span><span data-s="3"></span></div>'+
+      // STEP 1
+      '<div class="ng-step on" data-step="1">'+
+        '<div class="ng-title">1 · Client &amp; brand</div><div class="ng-sub">Who are we presenting to?</div>'+
+        '<div class="ng-field"><label>Niche</label><select id="ngNiche"><option value="roofer">Roofer</option><option value="hvac">HVAC</option><option value="kitchen">Kitchen Remodeler</option><option value="solar">Solar Company</option><option value="pest">Pest Control</option><option value="custom">Custom…</option></select></div>'+
+        '<div class="ng-field" id="ngCustomWrap" style="display:none"><label>Custom niche</label><input id="ngCustom" type="text" placeholder="e.g. Landscaping" value="'+(c.customNiche||'')+'"></div>'+
+        '<div class="ng-row">'+fld('ngClient','Client / business name',c.client,'e.g. Nexus Solution')+fld('ngCity','City / location',c.city,'e.g. Nelspruit')+'</div>'+
+        fld('ngLink','Client website link',c.link,'https://theirsite.co.za','Drives the live-preview laptop, “Open Live Site”, and section links.')+
+        fld('ngPay','Payment / activation link',c.paymentLink,'https://pay.yozma… (Stripe, Paystack, etc.)','Shown to the client as the “Activate My Engine” button.')+
         '<div class="ng-field"><label>Client logo (upload)</label><input id="ngLogo" type="file" accept="image/*"><img class="ng-logo-prev" id="ngLogoPrev" alt=""></div>'+
-        '<button class="ng-launch" id="ngLaunch">Launch presentation →</button>'+
-        '<button class="ng-skip" id="ngSkip">Skip — use defaults</button>'+
+      '</div>'+
+      // STEP 2
+      '<div class="ng-step" data-step="2">'+
+        '<div class="ng-title">2 · Pricing</div><div class="ng-sub">Leave any field blank to keep the default shown.</div>'+
+        '<div class="ng-row-3">'+fld('ngSetup','One-time setup (R)',c.setup,D.setup)+fld('ngMonthly','Monthly (R)',c.monthly,D.monthly)+fld('ngOffer','Reveal offer (R)',c.offer,D.offer)+'</div>'+
+        '<div class="ng-grouphdr">Stacked value · scratched prices</div>'+
+        '<div class="ng-row-3">'+fld('ngVsBuild','Website build',vs.build,D.vs.build)+fld('ngVsAi','AI lead stack',vs.ai,D.vs.ai)+fld('ngVsSeo','SEO foundation',vs.seo,D.vs.seo)+'</div>'+
+        '<div class="ng-row">'+fld('ngVsHost','Hosting · SSL',vs.hosting,D.vs.hosting)+fld('ngVsRep','Reputation engine',vs.reputation,D.vs.reputation)+'</div>'+
+        '<div class="ng-hint">“What this is worth” auto-totals from these five.</div>'+
+        '<div class="ng-grouphdr">Added services · monthly (impact retainer when selected)</div>'+
+        '<div class="ng-row-3">'+fld('ngSvcGads','Google Ads + SEO',sv.gads_seo,D.services.gads_seo)+fld('ngSvcFb','Facebook Ads',sv.fb,D.services.fb)+fld('ngSvcSocial','Social Media',sv.social,D.services.social)+'</div>'+
+      '</div>'+
+      // STEP 3
+      '<div class="ng-step" data-step="3">'+
+        '<div class="ng-title">3 · Winning Formula (optional)</div><div class="ng-sub">Rename the section, the three levers, and the sitemap pages. Blank = default.</div>'+
+        fld('ngWfTitle','Section title',wf.title,W.title)+
+        fld('ngWfSub','Section subtitle',wf.subtitle,W.subtitle)+
+        '<div class="ng-grouphdr">The three levers</div>'+
+        '<div class="ng-row">'+fld('ngPt1','Lever 1 term',(pil.traffic||{}).term,W.pillars.traffic.term)+fld('ngPg1','Lever 1 tagline',(pil.traffic||{}).tag,W.pillars.traffic.tag)+'</div>'+
+        '<div class="ng-row">'+fld('ngPt2','Lever 2 term',(pil.trust||{}).term,W.pillars.trust.term)+fld('ngPg2','Lever 2 tagline',(pil.trust||{}).tag,W.pillars.trust.tag)+'</div>'+
+        '<div class="ng-row">'+fld('ngPt3','Lever 3 term',(pil.conversion||{}).term,W.pillars.conversion.term)+fld('ngPg3','Lever 3 tagline',(pil.conversion||{}).tag,W.pillars.conversion.tag)+'</div>'+
+        '<div class="ng-grouphdr">Sitemap page names (the dropdowns)</div>'+
+        '<div class="ng-row-3">'+fld('ngArHome','Home',ar.home,W.arch.home)+fld('ngArAbout','About',ar.about,W.arch.about)+fld('ngArGallery','Gallery',ar.gallery,W.arch.gallery)+'</div>'+
+        '<div class="ng-row-3">'+fld('ngArReviews','Reviews',ar.reviews,W.arch.reviews)+fld('ngArContact','Contact',ar.contact,W.arch.contact)+fld('ngArBlog','Blog',ar.blog,W.arch.blog)+'</div>'+
+        '<div class="ng-row">'+fld('ngArServices','Pillar · Services',ar.services,W.arch.services)+fld('ngArLocations','Pillar · Locations',ar.locations,W.arch.locations)+'</div>'+
+        '<div class="ng-row">'+fld('ngArWhyus','Pillar · Why Us',ar.whyus,W.arch.whyus)+fld('ngArProcess','Pillar · Process',ar.process,W.arch.process)+'</div>'+
+      '</div>'+
+      '<div class="ng-nav" id="ngNav"></div>'+
+      '<button class="ng-skip" id="ngSkip">Skip — use defaults</button>'+
       '</div>';
     document.getElementById('ngNiche').value=c.niche;
-    document.getElementById('ngClient').value=c.client||'';
-    document.getElementById('ngCity').value=c.city||'';
-    document.getElementById('ngLink').value=c.link||'';
-    document.getElementById('ngOffer').value=c.offer||'';
-    document.getElementById('ngCustom').value=c.customNiche||'';
-    var cw=document.getElementById('ngCustomWrap');
-    cw.style.display=(c.niche==='custom')?'block':'none';
+    var cw=document.getElementById('ngCustomWrap'); cw.style.display=(c.niche==='custom')?'block':'none';
+    document.getElementById('ngNiche').addEventListener('change',function(e){ cw.style.display=(e.target.value==='custom')?'block':'none'; });
     if(c.logo){ var pv=document.getElementById('ngLogoPrev'); pv.src=c.logo; pv.style.display='block'; }
     var pendingLogo=c.logo||'';
-    document.getElementById('ngNiche').addEventListener('change',function(e){ cw.style.display=(e.target.value==='custom')?'block':'none'; });
-    document.getElementById('ngLogo').addEventListener('change',function(e){
-      var f=e.target.files&&e.target.files[0]; if(!f) return;
-      var r=new FileReader(); r.onload=function(ev){ pendingLogo=ev.target.result; var pv=document.getElementById('ngLogoPrev'); pv.src=pendingLogo; pv.style.display='block'; }; r.readAsDataURL(f);
-    });
+    document.getElementById('ngLogo').addEventListener('change',function(e){ var f=e.target.files&&e.target.files[0]; if(!f) return; var r=new FileReader(); r.onload=function(ev){ pendingLogo=ev.target.result; var pv=document.getElementById('ngLogoPrev'); pv.src=pendingLogo; pv.style.display='block'; }; r.readAsDataURL(f); });
+
+    var step=1; function render(){
+      w.querySelectorAll('.ng-step').forEach(function(s){ s.classList.toggle('on', +s.getAttribute('data-step')===step); });
+      w.querySelectorAll('.ng-steps span').forEach(function(s){ s.classList.toggle('on', +s.getAttribute('data-s')<=step); });
+      var nav=document.getElementById('ngNav'); nav.innerHTML='';
+      if(step>1){ var b=document.createElement('button'); b.className='ng-btn ng-back'; b.textContent='Back'; b.onclick=function(){ step--; render(); }; nav.appendChild(b); }
+      if(step<3){ var n=document.createElement('button'); n.className='ng-btn ng-next'; n.textContent='Next'; n.onclick=function(){ step++; render(); }; nav.appendChild(n); }
+      else { var l=document.createElement('button'); l.className='ng-btn ng-launch'; l.textContent='Launch presentation →'; l.onclick=function(){ commit(false); }; nav.appendChild(l); }
+    }
+    render();
+    function val(id){ var el=document.getElementById(id); return el?el.value.trim():''; }
     function commit(useDefaults){
       var cfg;
       if(useDefaults){ cfg=defaults(); }
-      else {
-        cfg={
-          niche:document.getElementById('ngNiche').value,
-          customNiche:document.getElementById('ngCustom').value.trim(),
-          client:document.getElementById('ngClient').value.trim()||'Nexus Solution',
-          city:document.getElementById('ngCity').value.trim()||'Hazelview, Robincrest 969',
-          link:document.getElementById('ngLink').value.trim(),
-          offer:fmtMoney(document.getElementById('ngOffer').value)||'15,000',
-          logo:pendingLogo
-        };
-      }
+      else { cfg={
+        niche:val('ngNiche'), customNiche:val('ngCustom'),
+        client:val('ngClient')||'Nexus Solution', city:val('ngCity')||'Hazelview, Robincrest 969',
+        link:val('ngLink'), paymentLink:val('ngPay'), logo:pendingLogo,
+        offer:fmtMoney(val('ngOffer'))||'15,000',
+        setup:fmtMoney(val('ngSetup')), monthly:fmtMoney(val('ngMonthly')),
+        vs:{ build:fmtMoney(val('ngVsBuild')), ai:fmtMoney(val('ngVsAi')), seo:fmtMoney(val('ngVsSeo')), hosting:fmtMoney(val('ngVsHost')), reputation:fmtMoney(val('ngVsRep')) },
+        services:{ gads_seo:fmtMoney(val('ngSvcGads')), fb:fmtMoney(val('ngSvcFb')), social:fmtMoney(val('ngSvcSocial')) },
+        addonsSelected:(window.KCA_GET_SELECTED?window.KCA_GET_SELECTED():[]),
+        wf:{ title:val('ngWfTitle'), subtitle:val('ngWfSub'),
+          pillars:{ traffic:{term:val('ngPt1'),tag:val('ngPg1')}, trust:{term:val('ngPt2'),tag:val('ngPg2')}, conversion:{term:val('ngPt3'),tag:val('ngPg3')} },
+          arch:{ home:val('ngArHome'),about:val('ngArAbout'),gallery:val('ngArGallery'),reviews:val('ngArReviews'),contact:val('ngArContact'),blog:val('ngArBlog'),services:val('ngArServices'),locations:val('ngArLocations'),whyus:val('ngArWhyus'),process:val('ngArProcess') } }
+      }; }
       save(cfg); applyConfig(cfg); closeGate();
     }
-    document.getElementById('ngLaunch').addEventListener('click',function(){ commit(false); });
     document.getElementById('ngSkip').addEventListener('click',function(){ commit(true); });
     openGate();
   }
   function openGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=false; document.body.classList.add('ng-locked'); } }
   function closeGate(){ var g=document.getElementById('nexusGate'); if(g){ g.hidden=true; document.body.classList.remove('ng-locked'); } }
 
-  // ---- Save / share: client-sendable proposal link (works with NO backend) ----
-  function getShareParam(){
-    var m=location.search.match(/[?&]c=([^&]+)/); if(m) return decodeURIComponent(m[1]);
-    var h=location.hash.match(/[#&]c=([^&]+)/); if(h) return decodeURIComponent(h[1]);
-    return null;
+  // ---- floating buttons ----
+  function fbtn(id,txt,fn){ if(document.getElementById(id)) return; var b=document.createElement('button'); b.id=id; b.type='button'; b.textContent=txt; b.addEventListener('click',fn); document.body.appendChild(b); }
+  function ensureAgentBtns(){
+    fbtn('nexusEditBtn','⚙ Edit demo',function(){ buildGate(load()||defaults()); });
+    fbtn('nexusCompleteBtn','✓ Presentation complete',openShareModal);
+    fbtn('nexusClientsBtn','📁 Saved clients',openClientsModal);
   }
-  function encodeCfg(cfg){ try{ return btoa(unescape(encodeURIComponent(JSON.stringify(cfg)))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,''); }catch(e){ return ''; } }
-  function decodeCfg(str){ var b=str.replace(/-/g,'+').replace(/_/g,'/'); try{ return JSON.parse(decodeURIComponent(escape(atob(b)))); }catch(e){ return null; } }
-  function buildShareLink(cfg){ return location.origin+location.pathname+'?c='+encodeCfg(cfg); }
-
-  // NexusStore — front-end is finished. To get short links + a saved-clients dashboard,
-  // Lovable only needs to replace save()/load() with Supabase calls (see LOVABLE_HANDOFF.md).
-  // Until then these defaults give a fully working, sendable proposal link (no backend).
-  window.NEXUS_SUPABASE = { url:'', anonKey:'' };           // <-- Lovable: paste Supabase creds
-  window.NexusStore = {
-    save: function(cfg){ return Promise.resolve(buildShareLink(cfg)); },   // -> shareable URL
-    load: function(){ var s=getShareParam(); return s ? decodeCfg(s) : null; }
-  };
-
-  function openShareModal(){
-    var cfg = load() || window.NEXUS_CFG || defaults();
-    var wrap=document.getElementById('nexusShare');
-    if(!wrap){ wrap=document.createElement('div'); wrap.id='nexusShare'; document.body.appendChild(wrap); }
-    wrap.innerHTML='<div class="ns-card">'+
-      '<h3>Proposal saved — send it to '+ (cfg.client||'your client') +'</h3>'+
-      '<p>This link opens a read-only proposal with exactly the niche, branding and prices you set. Copy it and send via WhatsApp or email.</p>'+
-      '<div class="ns-link"><input id="nsLink" type="text" readonly value="Generating…"><button class="ns-copy" id="nsCopy">Copy</button></div>'+
-      '<div class="ns-ok" id="nsOk">✓ Link copied to clipboard</div>'+
-      '<div class="ns-actions"><a class="ns-open" id="nsOpen" target="_blank" rel="noopener">Open as client ↗</a><button class="ns-close" id="nsClose">Close</button></div>'+
-      '</div>';
-    wrap.hidden=false;
-    Promise.resolve(window.NexusStore.save(cfg)).then(function(link){
-      var inp=document.getElementById('nsLink'); if(inp){ inp.value=link; } var op=document.getElementById('nsOpen'); if(op){ op.href=link; }
-    });
-    document.getElementById('nsCopy').addEventListener('click',function(){
-      var inp=document.getElementById('nsLink'); inp.select(); inp.setSelectionRange(0,99999);
-      var done=function(){ document.getElementById('nsOk').style.display='block'; };
-      if(navigator.clipboard){ navigator.clipboard.writeText(inp.value).then(done,function(){ try{document.execCommand('copy');}catch(e){} done(); }); }
-      else { try{document.execCommand('copy');}catch(e){} done(); }
-    });
-    document.getElementById('nsClose').addEventListener('click',function(){ wrap.hidden=true; });
-    wrap.addEventListener('click',function(e){ if(e.target===wrap) wrap.hidden=true; });
+  function ensurePayBtn(c){
+    var b=document.getElementById('nexusPayBtn');
+    if(!b){ b=document.createElement('a'); b.id='nexusPayBtn'; document.body.appendChild(b); }
+    b.textContent='⚡ Activate My Engine';
+    b.href=c.paymentLink||'#'; if(c.paymentLink){ b.target='_blank'; b.rel='noopener'; }
   }
 
-  function ensureEditBtn(){
-    if(document.getElementById('nexusEditBtn')) return;
-    var b=document.createElement('button'); b.id='nexusEditBtn'; b.type='button'; b.textContent='⚙ Edit demo';
-    b.addEventListener('click',function(){ buildGate(load()||defaults()); });
-    document.body.appendChild(b);
-  }
-  function ensureCompleteBtn(){
-    if(document.getElementById('nexusCompleteBtn')) return;
-    var b=document.createElement('button'); b.id='nexusCompleteBtn'; b.type='button'; b.textContent='✓ Presentation complete';
-    b.addEventListener('click',openShareModal);
-    document.body.appendChild(b);
-  }
   function init(){
-    // Client view: opened from a shared link -> apply saved config, no setup gate, no agent buttons.
-    var fromStore = (window.NexusStore && window.NexusStore.load) ? window.NexusStore.load() : null;
-    if(fromStore){ window.__NEXUS_CLIENT_VIEW=true; applyConfig(fromStore); return; }
-    // Agent view: setup gate + edit + presentation-complete.
-    ensureEditBtn(); ensureCompleteBtn();
-    var saved=load();
-    if(saved){ applyConfig(saved); }
-    else { applyConfig(defaults()); buildGate(defaults()); }
+    var fromStore=(window.NexusStore&&window.NexusStore.load)?window.NexusStore.load():null;
+    var finish=function(cfg){ if(cfg){ window.__NEXUS_CLIENT_VIEW=true; applyConfig(cfg); return true; } return false; };
+    if(fromStore && typeof fromStore.then==='function'){ fromStore.then(function(cfg){ if(!finish(cfg)) agent(); }); return; }
+    if(finish(fromStore)) return;
+    agent();
   }
-  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init);
-  else init();
+  function agent(){
+    ensureAgentBtns();
+    var saved=load();
+    if(saved){ applyConfig(saved); } else { applyConfig(defaults()); buildGate(defaults()); }
+  }
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init); else init();
 })();
 </script>
 

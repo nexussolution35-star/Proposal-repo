@@ -113,7 +113,52 @@ for the saved-clients screen.
 
 ---
 
-## Suggested prompt — Path A (paste into Lovable)
+## ▶ Recommended prompt — let Lovable choose the route (paste this)
+
+> I'm uploading a finished proposal web-app as a zip. Inside: `nexus-proposal.html` (the complete
+> app, fully self-contained — plain HTML/CSS/vanilla JS, all images/branding inlined, no external
+> files); `index.html` (same app with assets as real files, more readable); and this
+> `LOVABLE_HANDOFF.md` (Supabase data model + exact save/load/list code).
+>
+> Context: this is a live sales tool I'll keep editing inside Lovable going forward. I want the
+> most solid, maintainable result, but it must NOT lose or break any current behaviour, design,
+> copy, pricing, or branding.
+>
+> Your task: evaluate the codebase and CHOOSE the best way to run it here — either port it to your
+> native React + Tailwind structure (better if I'll do ongoing structural edits in Lovable) OR
+> host it as-is as a static site (lowest risk). Recommend the approach with a one-paragraph reason,
+> then implement it. I trust your call — just preserve everything below.
+>
+> Must keep working exactly as today, whichever route you pick:
+> - The multi-step "Set up this demo" gate: niche, client name, city, website link, logo upload,
+>   payment/activation link, and ALL editable prices (one-time setup, monthly, reveal offer, the 5
+>   stacked/scratched values, the 3 add-on service prices), plus the Winning-Formula copy (section
+>   title/subtitle, the 3 levers, the sitemap page names).
+> - The templating engine that rewrites the whole page AND the architecture modal per
+>   niche/client/city, with sensible defaults when fields are blank.
+> - "Presentation complete" → saves the demo (incl. add-on services toggled during the demo) and
+>   produces a shareable client link.
+> - Opening a saved link = read-only client view: setup gate, edit button, "+ Add services" button
+>   and price-edit pencils all hidden; edit button replaced by an "Activate My Engine" button that
+>   points to the payment link.
+> - The "Saved clients" list of past demos.
+> - Mobile/tablet responsiveness (the "Your Investment" pricing tiers must not clip).
+>
+> Data layer (regardless of route): create a Supabase table `proposals (id text primary key,
+> config jsonb not null, created_at timestamptz default now())` with public read + insert RLS, and
+> implement the app's `NexusStore` save/load/list against it exactly as documented below (each
+> demo's full settings live in one `config` JSON; client link is `?c=<id>`; make the initial load
+> await the async fetch before choosing agent-vs-client view).
+>
+> Constraints: don't restyle, rewrite copy, or change prices/branding — the design is final; the
+> Nexus Solution assets are already included. If you port to React, keep it pixel-for-pixel, work
+> section by section using `nexus-proposal.html` as the visual reference, and verify templating,
+> pricing, gate, client view and saved-clients after each section. I'll connect the custom domain
+> myself — don't configure domains.
+
+---
+
+## Alternate prompt — Path A (force static host only)
 
 > "I'm uploading a finished, self-contained static site, `nexus-proposal.html` (plain
 > HTML/CSS/vanilla JS, all assets inlined). Host it as the site exactly as-is — do not change
